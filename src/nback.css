@@ -7,7 +7,7 @@
 .single-stimulus {
   width: 300px !important;
   height: 300px !important;
-  font-size: 400px !important;
+  font-size: 300px !important;
   background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
   position: relative;
@@ -46,8 +46,34 @@
   color: rgba(255, 255, 255, 0.2);
 }
 
-.nback-fixation {
-  color: rgba(255, 255, 255, 0.2);
+.stimulus-fixation {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.yellow {
+  cursor: pointer;
+  color: #fced24;
+}
+
+.blue {
+  cursor: pointer;
+  color: #2323a3;
+}
+
+.single-stimulus-container {
+  /* margin: 72px 0 72px 0 !important;  */
+  padding: 0 60px 0 60px !important;
+}
+
+.nback-main-container {
+  height: 80%;
+}
+
+.nback-container {
+  padding: 0 24px 0 24px;
+  height: calc(100vh - 40px);
+  min-height: 500px !important;
+
 }
 
 .nback-fixation.blink{
@@ -88,30 +114,4 @@
   100% {
     color: rgba(255, 255, 255, 0.5)
   }
-}
-
-.yellow {
-  cursor: pointer;
-  color: #fced24;
-}
-
-.blue {
-  cursor: pointer;
-  color: #2323a3;
-}
-
-.single-stimulus-container {
-  /* margin: 72px 0 72px 0 !important;  */
-  padding: 0 60px 0 60px !important;
-}
-
-.nback-main-container {
-  height: 80%;
-}
-
-.nback-container {
-  padding: 0 24px 0 24px;
-  height: calc(100vh - 40px);
-  min-height: 500px !important;
-
 }
