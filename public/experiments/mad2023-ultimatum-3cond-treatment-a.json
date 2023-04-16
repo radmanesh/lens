@@ -84,13 +84,13 @@
       "text": "ultimatum.2023.cont.intro4"
     },
     {
-			"id": "mad2023-ultimatum-control",
+			"id": "mad2023-ultimatum-3cond-treatment-b",
 			"type": "ultimatum",
       "text" : "ultimatum.rule.text",
-			"trials": 1,
+			"trials": 5,
       "tokens": 10,
       "useOpponentTypes": false,
-      "personsPrefix" : "mad2023-ultimatum.c-set.p",
+      "personsPrefix" : "mad2023-ultimatum.ta-set.p",
       "persons": [
         {
           "id": 1,

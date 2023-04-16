@@ -88,7 +88,7 @@
 			"id": "mad2023-ultimatum-3cond-treatment-b",
 			"type": "ultimatum",
       "text" : "ultimatum.rule.text",
-			"trials": 1,
+			"trials": 5,
       "tokens": 10,
       "useOpponentTypes": false,
       "personsPrefix" : "mad2023-ultimatum.tb-set.p",
