@@ -68,6 +68,7 @@
       "opponentTypes": ["occupied","female"],
       "useOpponentTypes": false,
       "personsPrefix" : "detailed.set.p",
+      "dialogOptionalText" : "ultimatum.dialog_optional_text_default",
       "persons": [
         {
           "id": 1,
