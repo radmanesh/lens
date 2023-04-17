@@ -600,7 +600,8 @@
 	"ultimatum.dialog_title.accepted": "Proposal Accepted",
 	"ultimatum.dialog_title.rejected": "Proposal Rejected",
 	"ultimatum.trial_score_report": "The other player {{decision}} the proposal. You received {{score}} points. ",
-	"ultimatum.total_score_report": " In total, you have {{score}} points. Press Next to conintue.",
+	"ultimatum.total_score_report": " In total, you have {{score}} points.",
+	"ultimatum.dialog_optional_text_default": "Press Next to Continue",
 	"ultimatum.next_trial": "Next Round",
 
 	"ultimatum.intro1.text": "In the next task, some tokens are placed between you and another participant in this study.<br /> <br /> You decide how to divide them between the two of you, however you like.<br /> <br /> The other player decides to accept or reject the offer. If they **accept** it, you both get your tokens.<br /> <br />If they **reject** it, neither of you get anything.<br /> <br /> Press **Next** to start a step-by-step tutorial.",
@@ -706,8 +707,7 @@
 	"ultimatum.2023.cont.done1": "Thanks for your participation. The study is complete.",
 	"ultimatum.2023.cont.done2": "We will administer the second round of the study in a few weeks. Please wait until all results are in, and we ‘ll update you about the bonuses. Thanks again for your participation.",
 
-	"mad2023-ultimatum.c-set.p1.field1.content":"Anonymous",
-	"mad2023-ultimatum.c-set.p1.field2.content":"No ID",
+	"mad2023-ultimatum.c-set.p1.field1.content":"No ID",
 	"mad2023-ultimatum.c-set.p2.field1.content":"Ingrid",
 	"mad2023-ultimatum.c-set.p2.field2.content":"****a4bb32c04f743412****",
 	"mad2023-ultimatum.c-set.p3.field1.content":"Raj",

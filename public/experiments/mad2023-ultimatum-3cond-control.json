@@ -44,8 +44,8 @@
     {
       "id": "tutorial3",
       "type": "text",
-      "instruction": true,
-      "text": "ultimatum.intro3.text"
+      "instruction": false,
+      "text": "ultimatum.intro3.text",
     },
     {
       "id": "tutorial4",
@@ -136,6 +136,5 @@
       "instruction": true,
       "text": "ultimatum.2023.cont.done2"
     }
-
   ]
 }
