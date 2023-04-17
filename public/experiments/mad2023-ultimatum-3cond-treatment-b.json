@@ -66,6 +66,13 @@
       "text": "ultimatum.intro6.text"
     },
     {
+      "id": "intro2a",
+      "type": "text",
+      "instruction": false,
+      "text": "ultimatum.2023.cont.intro2a",
+      "required": true
+    },
+    {
       "id": "intro3",
       "type": "text",
       "instruction": false,
