@@ -154,15 +154,15 @@
       },
       "stimuliDuration": 2000,
       "fixationDuration": 500, 
-      "feedbackDuration": 1000,
+      "feedbackDuration": 500,
       "choices": {
         "go": {
           "type": "letter",
-          "names": ["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"]
+          "names": ["B","C","D","F","G","H","J","K","L","M","N","P","Q","R","S","T","V","W","X","Y","Z"]
         },
         "nogo": {
           "type": "letter",
-          "names":["a","e","i","o","u"] 
+          "names":["A","E","I","O","U"] 
         }
       }
     },
@@ -173,19 +173,19 @@
       "help":"gonogoalt.help",
       "trials": {
         "total": 120,
-        "go": 108
+        "go": 96
       },
       "stimuliDuration": 2000,
       "fixationDuration": 500, 
-      "feedbackDuration": 1000,
+      "feedbackDuration": 500,
       "choices": {
         "go": {
           "type": "letter",
-          "names": ["1","2","3","4","5","6","7","8","9"]
+          "names": ["1","2","3","4","5","6","8","9"]
         },
         "nogo": {
           "type": "letter",
-          "names":["0"] 
+          "names":["0","7"] 
         }
       }
     },
@@ -231,9 +231,9 @@
         "figureA": 30,
         "colorA": 30
       },
-      "stimuliDuration": 3000,
-      "fixationDuration": 500, 
-      "feedbackDuration": 1000,
+      "stimuliDuration": 1000,
+      "fixationDuration": 1000, 
+      "feedbackDuration": 500,
       "timeoutsBeforeReset": 20
     },
 
