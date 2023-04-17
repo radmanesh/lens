@@ -86,12 +86,6 @@
       "text": "ultimatum.2023.cont.intro5"
     },
     {
-      "id": "tutorial7",
-      "type": "text",
-      "instruction": true,
-      "text": "ultimatum.intro7.text"
-    },
-    {
 			"id": "mad2023-ultimatum-3cond-treatment-b",
 			"type": "ultimatum",
       "text" : "ultimatum.rule.text",
