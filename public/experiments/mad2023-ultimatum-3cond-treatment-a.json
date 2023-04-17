@@ -1,7 +1,7 @@
 {
 	"studyId": "mad2023-ultmiatium-3cond-treatment-a",
 	"conditon": "a", 
-	"redirectTo": "https://cut.social",
+	"redirectTo": "https://app.prolific.co/submissions/complete?cc=CC9M2FZH",
 	"submissionNote": "submission.note",
 	"metadata": {
 		"maintainer": "salarirad@gmail.com"
@@ -99,31 +99,31 @@
           "id": 1,
           "field1": "field1.content",
           "field2": "field2.content",
-          "minAcceptable": 2
+          "minAcceptable": 5
         },
         {
           "id": 2,
           "field1": "field1.content",
           "field2": "field2.content",
-          "minAcceptable": 0
+          "minAcceptable": 5
         },
         {
           "id": 3,
           "field1": "field1.content",
           "field2": "field2.content",
-          "minAcceptable": 1
+          "minAcceptable": 5
         },
         {
           "id": 4,
           "field1": "field1.content",
           "field2": "field2.content",
-          "minAcceptable": 1
+          "minAcceptable": 5
         },
         {
           "id": 5,
           "field1": "field1.content",
           "field2": "field2.content",
-          "minAcceptable": 1
+          "minAcceptable": 5
         }
       ]
 		},
