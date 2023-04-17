@@ -4,9 +4,10 @@
   "redirectTo": "https://cut.social",
   "submissionNote": "submission.note",
   "metadata": {
-    "maintainer": "salarirad@gmail.com"
+    "maintainer": "radmanesh@gmail.com"
   },
-  "views": [
+  "views": 
+  [
     {
       "id": "prolific ID",
       "type": "text",
@@ -168,7 +169,7 @@
       "feedbackDuration": 1000,
       "timeoutsBeforeReset": 20
     },
-    
+
     {
       "id": "stroop.practice.introduction",
       "type": "text",

@@ -4,9 +4,10 @@
 	"redirectTo": "https://cut.social",
 	"submissionNote": "submission.note",
 	"metadata": {
-		"maintainer": "salarirad@gmail.com"
+		"maintainer": "radmanesh@gmail.com"
 	},
-	"views": [
+	"views": 
+  [
     {
 			"id": "prolific ID",
 			"type": "text",
