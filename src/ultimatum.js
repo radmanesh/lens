@@ -16,7 +16,7 @@ export default function Ultimatum({ content, onStore, onNotification }) {
   //content:   text , tokens , trials , opponentTypes, useOpponentTypes, personsPrefix
 
   const { t } = useTranslation();
-  const { tokens, trials, useOpponentTypes, opponentTypes, text, personsPrefix, persons } = content;
+  const { tokens, trials, useOpponentTypes, opponentTypes, text, personsPrefix, dialogOptionalText, persons } = content;
 
   //const theme = (languages[lang].direction === 'rtl') ? rtlTheme : ltrTheme;
   //const classes = useStyles(theme);
@@ -216,6 +216,8 @@ export default function Ultimatum({ content, onStore, onNotification }) {
           <DialogContentText>
             {t('ultimatum.trial_score_report', {decision: state.trialResponses[state.trialResponses.length - 1].result, score: state.trialResponses[state.trialResponses.length - 1].score })}
             {t('ultimatum.total_score_report', { score: state.trialResponses.map(r => r.score).reduce((a, b) => a + b, 0) })}
+            <br /> <br />
+            {!state.finished && dialogOptionalText ? t(dialogOptionalText) : t('ultimatum.dialog_optional_text_default')}
           </DialogContentText>
         </DialogContent>
         <DialogActions>

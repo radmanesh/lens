@@ -12,10 +12,10 @@ import {
   Watch,
   School,
   FreeBreakfast as Cup,
-  Timer,
   Block,
   Check as Correct,
-  Clear as Incorrect
+  Clear as Incorrect,
+  Adjust
 } from '@material-ui/icons';
 import { shuffle } from './utils/random';
 
@@ -298,7 +298,7 @@ export default function NBack({content, onStore, onNotification, onProgress}) {
   const renderFixation = () => {
     return (
       <Grid item container direction="row" justifyContent="space-around" alignItems="center">
-        <Timer fontSize='large' className='stimulus-fixation single-stimulus-icon' />
+        <Adjust fontSize='large' className='stimulus-fixation single-stimulus-icon' />
       </Grid>
     );
   }

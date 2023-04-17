@@ -52,7 +52,7 @@ export default function Submission({submission, studyId, submissionNote}) {
         .catch(error => {
           ReactGA.event({
             category: "error",
-            action: "submission_insert_error, pid : "+pid,
+            action: "submission_insert_error, pid : "+pid +'  error:' + error + '  stringify:'+ JSON.stringify(error),
             label: "info submission insert: " + JSON.stringify(submission)
           });
           return console.error('Error:', error);
