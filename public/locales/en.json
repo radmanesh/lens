@@ -9,7 +9,7 @@
 	"text.choose_a_country": "Choose a Country",
 	"text.no_options": "No Options",
 
-	"intro": "**Welcome!**<br /><br />This study is part of a research project on decision making.<br /><br />It takes about 12 minutes.<br /><br />For participating in the study, you receive a flat fee plus bonus points based on your perfromances in different tasks. **Your bonus points determine your chances on a $50 raffle**. More bonus points = higher chance of winning.<br /><br />No specific background knowledge is required. As long as you follow the instructions, your bonuses should be on the higher end.<br /><br />Press **Next** to begin.",
+	"intro": "**Welcome!**<br /><br />This study is part of a research project on cognitive performance and decision making.<br /><br />It takes about 20 minutes.<br /><br />For participating in the study, you receive a flat fee plus bonus points based on your perfromances in different tasks. **Your bonus points determine your chances on a $50 raffle**. More bonus points = higher chance of winning.<br /><br />No specific background knowledge is required. As long as you follow the instructions, your bonuses should be on the higher end.<br /><br />Press **Next** to begin.",
 	"intro.2": "**Welcome!**<br /><br />This study is part of a research project on decision making, conducted by researchers at the New School for Social Research.<br /><br />The entire study takes about 15-18 minutes.<br /><br />For participating in the study, you receive a flat fee plus bonus points based on your responses in different tasks. **Your bonus points also determine your chances on a $50 raffle**. More bonus points = higher chance of winning.<br /><br />The study does not require specific background knowledge. As long as you follow the instructions, your bonuses should be on the higher end. Your participation is, of course, voluntary. Your responses will be entirely anonymous.<br /><br />For any questions or comments, send them to the email address below: salam955@newschool.edu<br /><br />Press **Next** to begin.",
 	"intro.ug":"**Welcome!**<br /><br />This study is part of a research project on decision making.<br /><br />It takes about 7 minutes.<br /><br />For participating in the study, you receive a flat fee plus bonus points based on your perfromances in different tasks. **Your bonus points determine your chances on a $50 raffle**. More bonus points = higher chance of winning.<br /><br />No specific background knowledge is required. As long as you follow the instructions, your bonuses should be on the higher end.<br /><br />Press **Next** to begin.",
 	
@@ -136,12 +136,17 @@
 	"ownership.c8": "over 14 hours ago",
 
 	"gonogo.introduction": "Great. We're almost done.<br /><br />Next is Go-NoGo game. For this task, you need to use the right (&#8594;) or left (&#8592;) keys on your keyboard. You'll briefly see the shape of a blue or yellow star on the left or on the right side of the screen.<br /><br />If you see a blue star, you should press the key that matches the **same** side as the star. If you see a yellow star, you should press the key that points at the **opposite** side.<br /><br />You have 1 second to respond but faster and accurate responses will get you more bonus points. <br /><br />Let's start round 1 with feedback.",
+	"gonogo.introduction.2": "Great. In the first task, you'll briefly see the shape of a blue or yellow star on the left or on the right side of the screen.<br /><br />If you see a blue star, you should press the key that matches the **same** side as the star. If you see a yellow star, you should press the key that points at the **opposite** side.<br /><br />You have 1 second to respond but faster and accurate responses will get you more bonus points.<br /><br />You can use your mouse, or the right (&#8594;) or left (&#8592;) keys on your keyboard.<br /><br />Let's start round 1 with feedback.",
 	"gonogo.are_you_ready": "Place your fingers on the &#8594; and &#8592; keys. Press the space bar to begin.",
 	"gonogo.too_many_timeouts": "You waited too long! Let's start over.",
 	"gonogo.restart": "Restart",
 	"gonogo.start": "Start",
 	"gonogo.instruction": "Use &#8594; and &#8592; keys. Same side for blue star, opposite side for yellow star. Be quick!",
 	"gonogo.main.introduction": "Ok, so let's begin round 2. You will not receive feedback. Press next to begin.",
+
+	"gonogo.intro2.text":"Great. In the next task, we show you the numbers **0 to 9** briefly on the screen. You have to click on all the numbers except when for **0 and 7**. When you see **0 and 7**, don't do anything. Just wait. For other numbers, click on the numebr, or press the space bar as quickly as you can. Faster responses get you more points. Press next to continue.",
+	"gonogoalt.instruction.2":"Quick, click on the numbers, except for **0 or 7**. When you see 0 or 7, just wait. Don't do anything!",
+
 
 	"ramadan2020.questions.email": "What is your email?",
 	"ramadan2020.questions.email_placeholder": "Email",
@@ -693,11 +698,11 @@
 	"gonogoalt.instruction": "Use **Space** key or click on the symbol. When you see a vowel letter, click as fast as possible; Otherwise don't do anything",
 	"gonogoalt.help": "Press any key or click on symbol per instruction in less than three seconds.",
 	
-	
-	"taskswitch.intro1.text": "The next task requires your focus and attention.<br /> <br />In each trial, a star will appear in one of the four boxes. The star can be yellow or blue. <br /> <br />Press next to see how you should respond.",
-	"taskswitch.intro2.text": "If the star appears in one of the **top** two boxes, you should click on the BLUE stars. Click on the opposite side if it's YELLOW star (the empty box next to it):<br /><br /> Click on Blue:<img src='./images/taskswitch.top2.png' width='100%' /> <br />Click on the other side for Yellow stars:<img src='./images/taskswitch.top1.png' width='100%' />",
+	"taskswitch.intro0.text":"Great. we're half way there! Press next to begin the next task.",
+	"taskswitch.intro1.text": "The next task requires your focus and attention.<br /> <br />In each trial, a star will appear in one of four boxes. The star can be yellow or blue. <br /> <br />Press next to see how you should respond.",
+	"taskswitch.intro2.text": "For stars that appear in the **top** boxes, you should click on the BLUE stars:<br /><br /><img src='./images/taskswitch.top2.png' width='100%' /> <br />For YELLOW stars, click on the opposite side (the empty box next to it):<img src='./images/taskswitch.top1.png' width='100%' />",
 	"taskswitch.intro3.text": "When stars appear in the **bottom** two boxes, you should click on the YELLOW stars: <br /> <img src='./images/taskswitch.top3.png' width='100%' /><br /> And click on the opposite side when you see a BLUE star (the empty box next to it): <br /> <img src='./images/taskswitch.top4.png' width='100%' />",
-	"taskswitch.intro4.text": "Try to respond as accurately and quickly as possible. <br /><br />Faster accurate response get you more **points** and increase your chance in a raffle.<br /><br />You can also use &#8594; and &#8592; keys to answer.",
+	"taskswitch.intro4.text": "So, in the **top**, select the blue & avoid the yellow. In the **bottom**, select the yellow & avoid the blue.<br /><br />Try to respond as accurately and quickly as possible. <br /><br />Faster accurate response get you more **points** and increase your chance in a raffle.<br /><br />You can also use &#8594; and &#8592; keys to answer.",
 	"taskswitch.intro5.text": "In the first few rounds, you will recevie feedback about your response accuracy. Press next when you're ready.",
 
 	"ultimatum.2023.cont.intro1": "In this study, you will be **randomly** paired with other **prolific respondents and complete a task**. <br /> <br /> a. The task involves allocating **ten (10) points**. <br /> b. These points will determine your chance to **win a $30 raffle**. <br /> c. Press next to learn about the rules of the task. ",
@@ -738,7 +743,26 @@
 	"mad2023-ultimatum.tb-set.p4.field1.content":"Miriam",
 	"mad2023-ultimatum.tb-set.p4.field2.content":"****4a1fb58b6f001a58****",
 	"mad2023-ultimatum.tb-set.p5.field1.content":"Jasmin",
-	"mad2023-ultimatum.tb-set.p5.field2.content":"****9903398a230001ba****"
+	"mad2023-ultimatum.tb-set.p5.field2.content":"****9903398a230001ba****",
 
+	"mad2023-food.manip.scale.1":"When I smell a delicious food, I find it very difficult to keep from eating, even if I have just finished a meal. ",
+	"mad2023-food.manip.scale.2":"I deliberately take small helpings as a means of controlling my weight.",
+	"mad2023-food.manip.scale.3":"When I feel anxious, I find myself eating.",
+	"mad2023-food.manip.scale.4":"Sometimes when I start eating, I just can’t seem to stop.",
+	"mad2023-food.manip.scale.5":"Being with someone who is eating often makes me hungry enough to eat also.",
+	"mad2023-food.manip.scale.6":"When I feel blue, I often overeat.",
+	"mad2023-food.manip.scale.7":"When I see a real delicacy, I often get so hungry that I have to eat right away.",
+	"mad2023-food.manip.scale.8":"I get so hungry that my stomach often seems like a bottomless pit.",
+	"mad2023-food.manip.scale.9":"I am always hungry, so it is hard for me to stop eating before I finish the food on my plate.",
+	"mad2023-food.manip.scale.10":"When I feel lonely, I console myself by eating.",
+	"mad2023-food.manip.scale.11":"I do not eat some foods because they make me fat.",
+	"mad2023-food.manip.scale.12":" I am always hungry enough to eat at any time.",
+
+	"eating.c1":"Definitely false",
+	"eating.c2":"Mostly False",
+	"eating.c3":"Mostly True",
+	"eating.c4":"Definitely True",
+
+	"eating.instruction":"To what extent does each statement describe you?"
 
 }
