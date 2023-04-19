@@ -1,0 +1,71 @@
+{
+	"studyId": "mad2023-cognitive-control-manupilative-b",
+	"conditon": "b",
+	"redirectTo": "https://cut.social",
+	"submissionNote": "submission.note",
+	"metadata": {
+		"maintainer": "radmanesh@gmail.com"
+	},
+	"views": 
+  [
+    {
+			"id": "prolific ID",
+			"type": "text",
+			"instruction": false,
+			"required": true,
+			"text": "p.id.intro",
+			"help": "",
+			"placeholder": "",
+			"pattern": ""
+		},
+		{
+			"id": "introduction",
+			"type": "text",
+			"instruction": true,
+			"text": "intro"
+		},
+		{
+			"id": "ownership",
+			"type": "matrix",
+			"text": "ownership.q.instruction",
+			"requiredQuestions": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+			"direction": "vertical",
+			"choices": [
+				"Yes",
+				"No"
+			],
+			"questions": [
+				"ownership.q.1",
+				"ownership.q.2",
+				"ownership.q.3",
+				"ownership.q.4",
+				"ownership.q.5",
+				"ownership.q.6",
+				"ownership.q.7",
+				"ownership.q.8",
+				"ownership.q.9",
+				"ownership.q.10"
+			]
+		},
+		{
+			"id": "phone.time",
+			"type": "matrix",
+			"text": "",
+			"requiredQuestions": [0],
+			"direction": "vertical",
+			"choices": [
+				"ownership.c1",
+				"ownership.c2",
+				"ownership.c3",
+				"ownership.c4",
+				"ownership.c5",
+				"ownership.c6",
+				"ownership.c7",
+				"ownership.c8"
+			],
+			"questions": [
+				"ownership.time.q"
+			]
+		}
+  ]
+}
