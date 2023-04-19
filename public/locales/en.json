@@ -686,11 +686,18 @@
 	"taskswitch.tutorial": "Use &#8594; and &#8592; keys. <br /> If the symbols are placed above the divider line you should focus only on shape of those Symbols, same side for the (blue/yellow) Circle, opposite side for the Star. <br /> If the symbols are placed below the divider line you should only focus on the color, Same side for Yellow, opposite side for blue. <br /> **Be quick!**",
 
 
-	"nback.are_you_ready": "Are you ready",
+	"nback.are_you_ready": "Are you ready!",
 	"nback.start": "Start",
-	"nback.instruction": "NBack Instructions",
+	"nback.instruction": "Only click or press on space for letters that showed up **2 letters ago** (A &#8594; B &#8592; A: click!)",
 	"nback.help": "Press only if you have seen the image exactly two step ago. <br /> <br /> You have two seconds to respond.",
 
+	"nback.intro1.text": "In the next tasks, you will briefly see the letters A, B, C, D, E repeated in random order. <br /> <br /> You have to click on the letters that showed up 2 letters ago. For example, if you saw A, then B, then A, you should click on it. <br /> <br /> If you saw A, then B, then E, you shouldn’t click on anything. Just let the next letter appear. Then if the next letter was B, you should click on it. <br /> <br /> Just make sure you always keep in mind what letters were shown to you two letters ago.",
+	"nback.check.text": "Here are a few questions to check your understanding:",
+	"nback.check.q.1": "After seeing B and then E, you see A, should you click on it?",
+	"nback.check.q.2": "After seeing D and then C, you see D, should you click on it?",
+	"nback.check.q.3": "After seeing B and then A, you see D, should you click on it?",
+	"nback.check.choice.1":"Yes",
+	"nback.check.choice.2": "No",
 
 	"gonogoalt.are_you_ready": "Place your finger on the **space** key or click on the symbols per instruction. Press **Start** to begin.",
 	"gonogoalt.introduction": "###Go-NoGo <br /> <br /> In this task... ",
@@ -772,6 +779,7 @@
 	"transition.1":"Let's start with a few questions about your diet.",
 	"transition.2":"Great. Almost there. Press next to continue.",
 
+	"mad2023-cc.outro": "And we are done! You did great. Thank you! <br /> <br /> We will calculate your points and let you know about the raffle results. <br /> <br /> Also, there will be a follow up survey in a few weeks. Make sure you participate in that as well. <br /> <br /> Please press next to be redirected to the Prolific website.",
 
 	"eating.c1":"Definitely false",
 	"eating.c2":"Mostly False",

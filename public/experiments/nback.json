@@ -8,6 +8,28 @@
   },
   "views": [
     {
+			"id": "nback.intro1",
+			"type": "text",
+			"instruction": true,
+			"text": "nback.intro1.text"
+		},
+		{
+			"id": "nback.check",
+			"type": "matrix",
+			"text": "nback.check.text",
+			"requiredQuestions": [0, 1, 2],
+			"direction": "vertical",
+			"choices": [
+				"nback.check.choice.1",
+				"nback.check.choice.2"
+			],
+			"questions": [
+				"nback.check.q.1",
+				"nback.check.q.2",
+				"nback.check.q.3"
+			]
+		},
+    {
       "id": "NBack Test Demo Letters",
       "type": "nback",
       "text": "nback.instruction",
