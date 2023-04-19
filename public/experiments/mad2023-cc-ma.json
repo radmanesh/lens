@@ -238,7 +238,7 @@
     },
     {
       "id": "TaskSwitch Demo",
-      "type":"simplified_taskswitch",
+      "type":"taskswitch",
       "text":"taskswitch.instruction",
       "help":"taskswitch.help",
       "trials": {
