@@ -1,7 +1,7 @@
 {
   "studyId": "mad2023-cognitive-control-manupilative-a",
   "conditon": "a",
-  "redirectTo": "https://cut.social",
+  "redirectTo": "https://app.prolific.co/submissions/complete?cc=C1L9GKYD",
   "submissionNote": "submission.note",
   "metadata": {
     "maintainer": "salarirad@gmail.com"
@@ -484,8 +484,8 @@
         {
           "stimulus": "RR",
           "choices": [
-            "GR",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
 
@@ -534,8 +534,8 @@
         {
           "stimulus": "GR",
           "choices": [
-            "GR",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
@@ -803,7 +803,7 @@
       "feedbackDuration": 0,
       "timeoutsBeforeReset": 10,
       "randomizeTrials": true,
-      "randomizeChoices": false
+      "randomizeChoices": true
     },
     {
 			"id": "nback.intro1",
