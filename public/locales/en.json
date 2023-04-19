@@ -691,7 +691,7 @@
 	"nback.instruction": "Only click or press on space for letters that showed up **2 letters ago** (A &#8594; B &#8592; A: click!)",
 	"nback.help": "Press only if you have seen the image exactly two step ago. <br /> <br /> You have two seconds to respond.",
 
-	"nback.intro1.text": "In the next tasks, you will briefly see the letters A, B, C, D, E repeated in random order. <br /> <br /> You have to click on the letters that showed up 2 letters ago. For example, if you saw A, then B, then A, you should click on it. <br /> <br /> If you saw A, then B, then E, you shouldn’t click on anything. Just let the next letter appear. Then if the next letter was B, you should click on it. <br /> <br /> Just make sure you always keep in mind what letters were shown to you two letters ago.",
+	"nback.intro1.text": "In the next tasks, you will briefly see the letters A, B, C, D, E flashed in random order. <br /> <br /> You have to click on the letters that showed up **2 letters ago**. For example, \n- click on A if it appears after you saw A followed by B (A→B→A: click!). \n- if you see A, then B, then E, don’t click on anything. Let the letter disappear (A→B→E: No click!). \n\nBe sure to keep in mind which letter was shown to you **two letters ago**.",
 	"nback.check.text": "Here are a few questions to check your understanding:",
 	"nback.check.q.1": "After seeing B and then E, you see A, should you click on it?",
 	"nback.check.q.2": "After seeing D and then C, you see D, should you click on it?",
