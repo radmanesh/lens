@@ -261,7 +261,7 @@
     },    
     {
       "id": "TaskSwitch Demo",
-      "type":"simplified_taskswitch",
+      "type":"taskswitch",
       "text":"taskswitch.instruction",
       "help":"taskswitch.help",
       "trials": {
@@ -312,7 +312,8 @@
       "help": "stroop_demo.help",
       "colors": {
         "G": "#6cba47",
-        "R": "#d73636"
+        "R": "#d73636",
+        "W": "#fff"
       },
       "words": {
         "G": "colors.green",
@@ -322,162 +323,162 @@
         {
           "stimulus": "GG",
           "choices": [
-            "GG",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RG",
           "choices": [
-            "GG",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GG",
           "choices": [
-            "GR",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RR",
           "choices": [
-            "GG",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RG",
           "choices": [
-            "GG",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RR",
           "choices": [
-            "GG",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GR",
           "choices": [
-            "GR",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RR",
           "choices": [
-            "GR",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RG",
           "choices": [
-            "GR",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RG",
           "choices": [
-            "GR",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GR",
           "choices": [
-            "GG",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RR",
           "choices": [
-            "GR",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GR",
           "choices": [
-            "GG",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GG",
           "choices": [
-            "GR",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GR",
           "choices": [
-            "GR",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GG",
           "choices": [
-            "GG",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GG",
           "choices": [
-            "GG",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RG",
           "choices": [
-            "GG",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GG",
           "choices": [
-            "GR",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RR",
           "choices": [
-            "GG",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RG",
           "choices": [
-            "GG",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RR",
           "choices": [
-            "GG",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GR",
           "choices": [
-            "GR",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
@@ -491,57 +492,57 @@
         {
           "stimulus": "RG",
           "choices": [
-            "GR",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RG",
           "choices": [
-            "GR",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GR",
           "choices": [
-            "GG",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RR",
           "choices": [
-            "GR",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GR",
           "choices": [
-            "GG",
+            "GW",
+            "RW"
+          ]
+        },
+        {
+          "stimulus": "GG",
+          "choices": [
+            "GW",
+            "RW"
+          ]
+        },
+        {
+          "stimulus": "GR",
+          "choices": [
+            "GR",
             "RG"
           ]
         },
         {
           "stimulus": "GG",
           "choices": [
-            "GR",
-            "RR"
-          ]
-        },
-        {
-          "stimulus": "GR",
-          "choices": [
-            "GR",
-            "RG"
-          ]
-        },
-        {
-          "stimulus": "GG",
-          "choices": [
-            "GG",
-            "RG"
+            "GW",
+            "RW"
           ]
         }
       ],
@@ -574,226 +575,226 @@
       "trials": [{
           "stimulus": "GG",
           "choices": [
-            "GG",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RG",
           "choices": [
-            "GG",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GG",
           "choices": [
-            "GR",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RR",
           "choices": [
-            "GG",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RG",
           "choices": [
-            "GG",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RR",
           "choices": [
-            "GG",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GR",
           "choices": [
-            "GR",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RR",
           "choices": [
-            "GR",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RG",
           "choices": [
-            "GR",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RG",
           "choices": [
-            "GR",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GR",
           "choices": [
-            "GG",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RR",
           "choices": [
-            "GR",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GR",
           "choices": [
-            "GG",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GG",
           "choices": [
-            "GR",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GR",
           "choices": [
-            "GR",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GG",
           "choices": [
-            "GG",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GG",
           "choices": [
-            "GG",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RG",
           "choices": [
-            "GG",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GG",
           "choices": [
-            "GR",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RR",
           "choices": [
-            "GG",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RG",
           "choices": [
-            "GG",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RR",
           "choices": [
-            "GG",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GR",
           "choices": [
-            "GR",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RR",
           "choices": [
-            "GR",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
 
         {
           "stimulus": "RG",
           "choices": [
-            "GR",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RG",
           "choices": [
-            "GR",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GR",
           "choices": [
-            "GG",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "RR",
           "choices": [
-            "GR",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GR",
           "choices": [
-            "GG",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GG",
           "choices": [
-            "GR",
-            "RR"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GR",
           "choices": [
-            "GR",
-            "RG"
+            "GW",
+            "RW"
           ]
         },
         {
           "stimulus": "GG",
           "choices": [
-            "GG",
-            "RG"
+            "GW",
+            "RW"
           ]
         }
       ],
