@@ -24,6 +24,12 @@
 			"instruction": true,
 			"text": "intro"
 		},
+    {
+      "id": "introduction1",
+      "type": "text",
+      "instruction": true,
+      "text": "transition.1b"
+    },
 		{
 			"id": "ownership",
 			"type": "matrix",

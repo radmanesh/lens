@@ -686,10 +686,11 @@
 	"taskswitch.tutorial": "Use &#8594; and &#8592; keys. <br /> If the symbols are placed above the divider line you should focus only on shape of those Symbols, same side for the (blue/yellow) Circle, opposite side for the Star. <br /> If the symbols are placed below the divider line you should only focus on the color, Same side for Yellow, opposite side for blue. <br /> **Be quick!**",
 
 
-	"nback.are_you_ready": "Are you ready!",
+	"nback.are_you_ready": "Are you ready?",
 	"nback.start": "Start",
-	"nback.instruction": "Only click or press on space for letters that showed up **2 letters ago** (A &#8594; B &#8592; A: click!)",
+	"nback.instruction": "Only click or press on space for letters that showed up **2 letters ago** (A &#8594; B &#8594; A: click!)",
 	"nback.help": "Press only if you have seen the image exactly two step ago. <br /> <br /> You have two seconds to respond.",
+	"nback.invalid.selection.notification": "Click from the third letter onwards!",
 
 	"nback.intro1.text": "In the next tasks, you will briefly see the letters A, B, C, D, E flashed in random order. <br /> <br /> You have to click on the letters that showed up **2 letters ago**. For example, \n- click on A if it appears after you saw A followed by B (A→B→A: click!). \n- if you see A, then B, then E, don’t click on anything. Let the letter disappear (A→B→E: No click!). \n\nBe sure to keep in mind which letter was shown to you **two letters ago**.",
 	"nback.check.text": "Here are a few questions to check your understanding:",
@@ -776,8 +777,9 @@
 	"mad2023-food.manip.scale.13":"I am always hungry enough to eat at any time.",
 	"mad2023-food.manip.scale.14":"I need you to select on mostly false for this one.",
 
-	"transition.1":"Let's start with a few questions about your diet.",
-	"transition.2":"Great. Almost there. Press next to continue.",
+	"transition.1": "Let's start with a few questions about your diet.",
+	"transition.1b": "Let’s start with a few personal questions.",
+	"transition.2": "Great. Almost there. Press next to continue.",
 
 	"mad2023-cc.outro": "And we are done! You did great. Thank you! <br /> <br /> We will calculate your points and let you know about the raffle results. <br /> <br /> Also, there will be a follow up survey in a few weeks. Make sure you participate in that as well. <br /> <br /> Please press next to be redirected to the Prolific website.",
 
