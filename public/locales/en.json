@@ -157,7 +157,7 @@
 	"colors.red": "Red",
 
 	"stroop_demo.rule": "Quick, what's the color of this text? Use &#8594; and &#8592; keys.",
-	"stroop.practice.introduction": "In the next task, you'll see color names written in different inks on top.<br /><br />You have two choices on the bottom. Using the right (&#8594;) or left (&#8592;) keys on your keyboard, you should select the **word** that matches the **color** of the text on top. So,\n- For <span style='color:red'>*GREEN*</span> or <span style='color:red'>*RED*</span>, you should choose <span style='color:red'>*RED*</span> or <span style='color:green'>*RED*</span>.\n- For <span style='color:green'>*RED*</span> or <span style='color:green'>*GREEN*</span>, you should choose <span style='color:red'>*GREEN*</span> or <span style='color:green'>*GREEN*</span>.\n\nAgain, accurate and quick responses get more bonus points. Press next to begin the first round (you'll get feedback about your responses).",
+	"stroop.practice.introduction": "In the next task, you'll see color names written in different inks on top.<br /><br />You have two choices on the bottom. Using the right (&#8594;) or left (&#8592;) keys on your keyboard, you should select the **word** that matches the **color** of the text on top. So,\n- For <span style='color:red'>*GREEN*</span> or <span style='color:red'>*RED*</span>, you should choose *RED*.\n- For <span style='color:green'>*RED*</span> or <span style='color:green'>*GREEN*</span>, you should choose *GREEN*.\n\nAgain, accurate and quick responses get more bonus points. Press next to begin the first round (you'll get feedback about your responses).",
 	"stroop.main.introduction": "Now the second round begins. You will not receive feedback this time. Press next to continue.",
 
 	"trust.q": "How much you agree or disagree with the following statements:",
@@ -681,7 +681,7 @@
 	"taskswitch.too_many_timeouts": "You waited too long! Let's start over.",
 	"taskswitch.restart": "Restart",
 	"taskswitch.start": "Start",
-	"taskswitch.instruction": "**Top**: select Blue, avoid Yellow. **Bottom**: avoid blue, select Yellow. <br /> <br />Use &#8594; and &#8592; keys, or click on symbols.**Be quick!**",
+	"taskswitch.instruction": "**Top**: select Blue, avoid Yellow. **Bottom**: avoid blue, select Yellow. <br /> <br />Use &#8594; and &#8592; keys, or click on symbols. **Be quick!**",
 	"taskswitch.main.introduction": "Ok, so let's begin round 2. You will not receive feedback. Press next to begin.",
 	"taskswitch.tutorial": "Use &#8594; and &#8592; keys. <br /> If the symbols are placed above the divider line you should focus only on shape of those Symbols, same side for the (blue/yellow) Circle, opposite side for the Star. <br /> If the symbols are placed below the divider line you should only focus on the color, Same side for Yellow, opposite side for blue. <br /> **Be quick!**",
 
@@ -704,7 +704,7 @@
 	"taskswitch.intro3.text": "When stars appear in the **bottom** boxes, you should click on the YELLOW stars: <br /> <img src='./images/taskswitch.top3.png' width='100%' /><br /> And click on the opposite side when you see a BLUE star (the empty box next to it): <br /> <img src='./images/taskswitch.top4.png' width='100%' />",
 	"taskswitch.intro4.text": "So, in the **top**, select the blue & avoid the yellow. In the **bottom**, select the yellow & avoid the blue.<br /><br />Try to respond as accurately and quickly as possible. <br /><br />Faster and accurate responses get you more **points** and increase your chance in a raffle.<br /><br />You can also use &#8594; and &#8592; keys to answer.",
 	"taskswitch.intro5.text": "In the first few rounds, you will recevie feedback about your response accuracy. Press next when you're ready.",
-	"taskswitch.check.text": "Given the previous intructions, which one accurate?",
+	"taskswitch.check.text": "Given the previous intructions, which one is accurate?",
 
 
 	"taskswitch.check.c1":"click on blue stars when they appear on the bottom row.",
@@ -769,7 +769,7 @@
 	"mad2023-food.manip.scale.13":"I am always hungry enough to eat at any time.",
 	"mad2023-food.manip.scale.14":"I need you to select on mostly false for this one.",
 
-	"transition.1":"Let's start with a few questions baout your diet.",
+	"transition.1":"Let's start with a few questions about your diet.",
 	"transition.2":"Great. Almost there. Press next to continue.",
 
 
