@@ -15,7 +15,7 @@ import {
   Block,
   Check as Correct,
   Clear as Incorrect,
-  Adjust
+  Add
 } from '@material-ui/icons';
 import { shuffle } from './utils/random';
 
@@ -298,7 +298,7 @@ export default function NBack({content, onStore, onNotification, onProgress}) {
   const renderFixation = () => {
     return (
       <Grid item container direction="row" justifyContent="space-around" alignItems="center">
-        <Adjust fontSize='large' className='stimulus-fixation single-stimulus-icon' />
+        <Add fontSize='large' className='stimulus-fixation single-stimulus-icon' />
       </Grid>
     );
   }
