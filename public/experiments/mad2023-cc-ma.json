@@ -95,7 +95,7 @@
       "id": "2afc.introduction",
       "type": "text",
       "instruction": true,
-      "text": "gonogo.introduction"
+			"text": "gonogo.introduction.2"
     },
     {
       "id": "2afc.practice",
@@ -144,9 +144,15 @@
       }
     },
     {
+      "id": "gonogo.numbers.intro1",
+      "type": "text",
+      "instruction": true,
+      "text": "gonogo.intro2.text"
+    },  
+    {
       "id": "gonogo with numbers",
       "type":"gonogoalt",
-      "text":"gonogoalt.instruction",
+      "text":"gonogoalt.instruction.2",
       "help":"gonogoalt.help",
       "trials": {
         "total": 120,
@@ -166,6 +172,40 @@
         }
       }
     },
+    {
+      "id": "eating",
+      "type": "matrix",
+      "text": "eating.instruction",
+      "slider": true,
+      "showMidMark": true,
+      "requiredQuestions": [
+        0,
+        1,
+        2
+      ],
+      "direction": "vertical",
+      "choices": [
+        "eating.c1",
+        "eating.c2",
+        "eating.c3",
+        "eating.c4"
+      ],
+      "questions": [
+        "mad2023-food.manip.scale.1",
+        "mad2023-food.manip.scale.2",
+        "mad2023-food.manip.scale.3",
+        "mad2023-food.manip.scale.4",
+        "mad2023-food.manip.scale.5",
+        "mad2023-food.manip.scale.6",
+        "mad2023-food.manip.scale.7",
+        "mad2023-food.manip.scale.8",
+        "mad2023-food.manip.scale.9",
+        "mad2023-food.manip.scale.10",
+        "mad2023-food.manip.scale.11",
+        "mad2023-food.manip.scale.12",
+        "mad2023-food.manip.scale.13"
+      ]
+    },  
     {
       "id": "taskswitch.intro1",
       "type": "text",
@@ -203,10 +243,27 @@
       "help":"taskswitch.help",
       "trials": {
         "total": 120,
-        "typeA": 60,
-        "left": 60,
-        "figureA": 30,
-        "colorA": 30
+        "top":{
+          "total": 60,
+          "go": 30,
+          "left": 30,
+          "leftGo": 15,
+          "choices": {
+            "go": "blue-star",
+            "nogo": "star"
+          }
+        },
+        "bottom":{
+          "total": 60,
+          "go": 30,
+          "left":30,
+          "leftGo": 15,
+          "choices": {
+            "go": "star",
+            "nogo": "blue-star"
+          }
+        }
+
       },
       "stimuliDuration": 1000,
       "fixationDuration": 1000, 
