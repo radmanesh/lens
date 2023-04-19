@@ -9,7 +9,7 @@
 	"text.choose_a_country": "Choose a Country",
 	"text.no_options": "No Options",
 
-	"intro": "**Welcome!**<br /><br />This study is part of a research project on decision making.<br /><br />It takes about 12 minutes.<br /><br />For participating in the study, you receive a flat fee plus bonus points based on your perfromances in different tasks. **Your bonus points determine your chances on a $50 raffle**. More bonus points = higher chance of winning.<br /><br />No specific background knowledge is required. As long as you follow the instructions, your bonuses should be on the higher end.<br /><br />Press **Next** to begin.",
+	"intro": "**Welcome!**<br /><br />This study is part of a research project on cognitive performance and decision making.<br /><br />It takes about 20 minutes.<br /><br />For participating in the study, you receive a flat fee plus bonus points based on your performance on different tasks. **Your bonus points determine your chances on a $50 raffle**. More bonus points = higher chance of winning.<br /><br />No specific background knowledge is required. As long as you follow the instructions, your bonuses should be on the higher end.<br /><br />Press **Next** to begin.",
 	"intro.2": "**Welcome!**<br /><br />This study is part of a research project on decision making, conducted by researchers at the New School for Social Research.<br /><br />The entire study takes about 15-18 minutes.<br /><br />For participating in the study, you receive a flat fee plus bonus points based on your responses in different tasks. **Your bonus points also determine your chances on a $50 raffle**. More bonus points = higher chance of winning.<br /><br />The study does not require specific background knowledge. As long as you follow the instructions, your bonuses should be on the higher end. Your participation is, of course, voluntary. Your responses will be entirely anonymous.<br /><br />For any questions or comments, send them to the email address below: salam955@newschool.edu<br /><br />Press **Next** to begin.",
 	"intro.ug":"**Welcome!**<br /><br />This study is part of a research project on decision making.<br /><br />It takes about 7 minutes.<br /><br />For participating in the study, you receive a flat fee plus bonus points based on your perfromances in different tasks. **Your bonus points determine your chances on a $50 raffle**. More bonus points = higher chance of winning.<br /><br />No specific background knowledge is required. As long as you follow the instructions, your bonuses should be on the higher end.<br /><br />Press **Next** to begin.",
 	
@@ -136,12 +136,17 @@
 	"ownership.c8": "over 14 hours ago",
 
 	"gonogo.introduction": "Great. We're almost done.<br /><br />Next is Go-NoGo game. For this task, you need to use the right (&#8594;) or left (&#8592;) keys on your keyboard. You'll briefly see the shape of a blue or yellow star on the left or on the right side of the screen.<br /><br />If you see a blue star, you should press the key that matches the **same** side as the star. If you see a yellow star, you should press the key that points at the **opposite** side.<br /><br />You have 1 second to respond but faster and accurate responses will get you more bonus points. <br /><br />Let's start round 1 with feedback.",
+	"gonogo.introduction.2": "Great. <br /><br />In the first task, you'll briefly see the shape of a blue or yellow star on the left or on the right side of the screen.<br /><br />If you see a blue star, you should click on it. If you see a yellow star, you should click on the **opposite** side.<br /><br />You have 1 second to respond but faster and accurate responses will get you more bonus points.<br /><br />You can use your mouse, or the right (&#8594;) or left (&#8592;) keys on your keyboard.<br /><br />Let's start round 1 with feedback.",
 	"gonogo.are_you_ready": "Place your fingers on the &#8594; and &#8592; keys. Press the space bar to begin.",
 	"gonogo.too_many_timeouts": "You waited too long! Let's start over.",
 	"gonogo.restart": "Restart",
 	"gonogo.start": "Start",
 	"gonogo.instruction": "Use &#8594; and &#8592; keys. Same side for blue star, opposite side for yellow star. Be quick!",
 	"gonogo.main.introduction": "Ok, so let's begin round 2. You will not receive feedback. Press next to begin.",
+
+	"gonogo.intro2.text":"Great. In the next task, we show you the numbers **0 to 9** briefly on the screen. You have to click on the numbers, except when for **0 and 7**.<br /><br />When you see **0 and 7**, don't do anything. Just wait. <br /><br />You can click on the numbers or press the space bar to respond. Faster responses get you more points. <br /><br />Press next to continue.",
+	"gonogoalt.instruction.2":"Quick, click on the numbers, except when it's **0 or 7**. When you see 0 or 7, don't do anything! Just wait.",
+
 
 	"ramadan2020.questions.email": "What is your email?",
 	"ramadan2020.questions.email_placeholder": "Email",
@@ -152,7 +157,7 @@
 	"colors.red": "Red",
 
 	"stroop_demo.rule": "Quick, what's the color of this text? Use &#8594; and &#8592; keys.",
-	"stroop.practice.introduction": "In the next task, you'll see color names written in different inks on top.<br /><br />You have two choices on the bottom. Using the right (&#8594;) or left (&#8592;) keys on your keyboard, you should select the **word** that matches the **color** of the text on top. So,\n- For <span style='color:red'>*GREEN*</span> or <span style='color:red'>*RED*</span>, you can choose <span style='color:red'>*RED*</span> or <span style='color:green'>*RED*</span>.\n- For <span style='color:green'>*RED*</span> or <span style='color:green'>*GREEN*</span>, you can choose <span style='color:red'>*GREEN*</span> or <span style='color:green'>*GREEN*</span>.\n\nAgain, accurate and quick responses get more bonus points. Press next to begin the first round (you'll get feedback about your responses).",
+	"stroop.practice.introduction": "In the next task, you'll see color names written in different inks on top.<br /><br />You have two choices on the bottom. Using the right (&#8594;) or left (&#8592;) keys on your keyboard, you should select the **word** that matches the **color** of the text on top. So,\n- For <span style='color:red'>*GREEN*</span> or <span style='color:red'>*RED*</span>, you should choose *RED*.\n- For <span style='color:green'>*RED*</span> or <span style='color:green'>*GREEN*</span>, you should choose *GREEN*.\n\nAgain, accurate and quick responses get more bonus points. Press next to begin the first round (you'll get feedback about your responses).",
 	"stroop.main.introduction": "Now the second round begins. You will not receive feedback this time. Press next to continue.",
 
 	"trust.q": "How much you agree or disagree with the following statements:",
@@ -609,7 +614,7 @@
 	"ultimatum.intro3.text": "When you drag a token, the color of target boxes changes.<br /> <br /> <img src='./images/ultimatum_intro_2.png' width='100%' />",
 	"ultimatum.intro4.text": "And the box where you are about to drop the token turns green. <br /> <br /><img src='./images/ultimatum_intro_3.png' width='100%' />",
 	"ultimatum.intro5.text": "After you've allocated all the tokens, press the **Propose** button to see the other player's response.<br /> <br /> <img src='./images/ultimatum_intro_4.png' width='100%' />",
-	"ultimatum.intro6.text": "Remembers, if the other player **Accepts** your proposal, you both get your tokens. <br /> <br /> <img src='./images/ultimatum_intro_accept.png' width='100%' /> <br /> <br /> If they **Rejects** your proposal, neither of you will get anything. <br /> <br /> <img src='./images/ultimatum_intro_reject.png' width='100%' />  ",
+	"ultimatum.intro6.text": "Remember, if the other player **Accepts** your proposal, you both get your tokens. <br /> <br /> <img src='./images/ultimatum_intro_accept.png' width='100%' /> <br /> <br /> If they **Rejects** your proposal, neither of you will get anything. <br /> <br /> <img src='./images/ultimatum_intro_reject.png' width='100%' />  ",
 	"ultimatum.intro7.text": "The task begins now. <br /> <br /> We previously obtained the other player's response to different possible proposals. <br /> <br /> It's your turn to make the proposals. You will play **five** rounds. Press next when you're ready. <br /> <br /> Remember, your total points determine your chances in the raffle.",
 	"ultimatum.person1.field1.content": "Other player",
 	"ultimatum.person1.field2.content": "",
@@ -676,16 +681,24 @@
 	"taskswitch.too_many_timeouts": "You waited too long! Let's start over.",
 	"taskswitch.restart": "Restart",
 	"taskswitch.start": "Start",
-	"taskswitch.instruction": "Use &#8594; and &#8592; keys, or click on symbols. **Be quick!**",
+	"taskswitch.instruction": "**Top**: select Blue, avoid Yellow. **Bottom**: avoid blue, select Yellow. <br /> <br />Use &#8594; and &#8592; keys, or click on symbols. **Be quick!**",
 	"taskswitch.main.introduction": "Ok, so let's begin round 2. You will not receive feedback. Press next to begin.",
 	"taskswitch.tutorial": "Use &#8594; and &#8592; keys. <br /> If the symbols are placed above the divider line you should focus only on shape of those Symbols, same side for the (blue/yellow) Circle, opposite side for the Star. <br /> If the symbols are placed below the divider line you should only focus on the color, Same side for Yellow, opposite side for blue. <br /> **Be quick!**",
 
 
-	"nback.are_you_ready": "Are you ready",
+	"nback.are_you_ready": "Are you ready?",
 	"nback.start": "Start",
-	"nback.instruction": "NBack Instructions",
+	"nback.instruction": "Only click or press on space for letters that showed up **2 letters ago** (A &#8594; B &#8594; A: click!)",
 	"nback.help": "Press only if you have seen the image exactly two step ago. <br /> <br /> You have two seconds to respond.",
+	"nback.invalid.selection.notification": "Click from the third letter onwards!",
 
+	"nback.intro1.text": "In the next tasks, you will briefly see the letters A, B, C, D, E flashed in random order. <br /> <br /> You have to click on the letters that showed up **2 letters ago**. For example, \n- click on A if it appears after you saw A followed by B (A→B→A: click!). \n- if you see A, then B, then E, don’t click on anything. Let the letter disappear (A→B→E: No click!). \n\nBe sure to keep in mind which letter was shown to you **two letters ago**.",
+	"nback.check.text": "Here are a few questions to check your understanding:",
+	"nback.check.q.1": "After seeing B and then E, you see A, should you click on it?",
+	"nback.check.q.2": "After seeing D and then C, you see D, should you click on it?",
+	"nback.check.q.3": "After seeing B and then A, you see D, should you click on it?",
+	"nback.check.choice.1":"Yes",
+	"nback.check.choice.2": "No",
 
 	"gonogoalt.are_you_ready": "Place your finger on the **space** key or click on the symbols per instruction. Press **Start** to begin.",
 	"gonogoalt.introduction": "###Go-NoGo <br /> <br /> In this task... ",
@@ -693,12 +706,19 @@
 	"gonogoalt.instruction": "Use **Space** key or click on the symbol. When you see a vowel letter, click as fast as possible; Otherwise don't do anything",
 	"gonogoalt.help": "Press any key or click on symbol per instruction in less than three seconds.",
 	
-	
-	"taskswitch.intro1.text": "The next task requires your focus and attention.<br /> <br />In each trial, a star will appear in one of the four boxes. The star can be yellow or blue. <br /> <br />Press next to see how you should respond.",
-	"taskswitch.intro2.text": "If the star appears in one of the **top** two boxes, you should click on the BLUE stars. Click on the opposite side if it's YELLOW star (the empty box next to it):<br /><br /> Click on Blue:<img src='./images/taskswitch.top2.png' width='100%' /> <br />Click on the other side for Yellow stars:<img src='./images/taskswitch.top1.png' width='100%' />",
-	"taskswitch.intro3.text": "When stars appear in the **bottom** two boxes, you should click on the YELLOW stars: <br /> <img src='./images/taskswitch.top3.png' width='100%' /><br /> And click on the opposite side when you see a BLUE star (the empty box next to it): <br /> <img src='./images/taskswitch.top4.png' width='100%' />",
-	"taskswitch.intro4.text": "Try to respond as accurately and quickly as possible. <br /><br />Faster accurate response get you more **points** and increase your chance in a raffle.<br /><br />You can also use &#8594; and &#8592; keys to answer.",
+	"taskswitch.intro0.text":"Great. we're half way there! Press next to begin the next task.",
+	"taskswitch.intro1.text": "The next task requires your focus and attention.<br /> <br />In each trial, a star will appear in one of four boxes. It can be yellow or blue. <br /> <br />Press next to see how you should respond.",
+	"taskswitch.intro2.text": "For stars that appear in the **top** boxes, you should click on the BLUE stars:<br /><br /><img src='./images/taskswitch.top2.png' width='100%' /> <br />For YELLOW stars, click on the opposite side (the empty box next to it):<img src='./images/taskswitch.top1.png' width='100%' />",
+	"taskswitch.intro3.text": "When stars appear in the **bottom** boxes, you should click on the YELLOW stars: <br /> <img src='./images/taskswitch.top3.png' width='100%' /><br /> And click on the opposite side when you see a BLUE star (the empty box next to it): <br /> <img src='./images/taskswitch.top4.png' width='100%' />",
+	"taskswitch.intro4.text": "So, in the **top**, select the blue & avoid the yellow. In the **bottom**, select the yellow & avoid the blue.<br /><br />Try to respond as accurately and quickly as possible. <br /><br />Faster and accurate responses get you more **points** and increase your chance in a raffle.<br /><br />You can also use &#8594; and &#8592; keys to answer.",
 	"taskswitch.intro5.text": "In the first few rounds, you will recevie feedback about your response accuracy. Press next when you're ready.",
+	"taskswitch.check.text": "Given the previous intructions, which one is accurate?",
+
+
+	"taskswitch.check.c1":"click on blue stars when they appear on the bottom row.",
+	"taskswitch.check.c2":"click on yellow stars when they appear in the top row.",
+	"taskswitch.check.c3":"click on blue stars when they appear in the top row.",
+
 
 	"ultimatum.2023.cont.intro1": "In this study, you will be **randomly** paired with other **prolific respondents and complete a task**. <br /> <br /> a. The task involves allocating **ten (10) points**. <br /> b. These points will determine your chance to **win a $30 raffle**. <br /> c. Press next to learn about the rules of the task. ",
 	"ultimatum.2023.cont.intro2": "Press next to learn about the task configuration.",
@@ -709,6 +729,8 @@
 	"ultimatum.2023.cont.done1": "Thanks for your participation. The study is complete.",
 	"ultimatum.2023.cont.done2": "We will administer the second round of the study in a few weeks. Please wait until all results are in, and we‘ll update you about the raffle. Thanks again for your participation. <br /> <br /> Press Next to be redirected to the Prolific webpage.",
 	"mad2023-ultimatum-3cond-dialog-text": "Next you will be paired with the other participant",
+
+
 
 	"mad2023-ultimatum.c-set.p1.field1.content":"No ID",
 	"mad2023-ultimatum.c-set.p2.field1.content":"Ingrid",
@@ -738,7 +760,34 @@
 	"mad2023-ultimatum.tb-set.p4.field1.content":"Miriam",
 	"mad2023-ultimatum.tb-set.p4.field2.content":"****4a1fb58b6f001a58****",
 	"mad2023-ultimatum.tb-set.p5.field1.content":"Jasmin",
-	"mad2023-ultimatum.tb-set.p5.field2.content":"****9903398a230001ba****"
+	"mad2023-ultimatum.tb-set.p5.field2.content":"****9903398a230001ba****",
 
+	"mad2023-food.manip.scale.1":"When I smell a delicious food, I find it very difficult to keep from eating, even if I have just finished a meal. ",
+	"mad2023-food.manip.scale.2":"I deliberately take small helpings as a means of controlling my weight.",
+	"mad2023-food.manip.scale.3":"When I feel anxious, I find myself eating.",
+	"mad2023-food.manip.scale.4":"Sometimes when I start eating, I just can’t seem to stop.",
+	"mad2023-food.manip.scale.5":"Being with someone who is eating often makes me hungry enough to eat also.",
+	"mad2023-food.manip.scale.6":"When I feel blue, I often overeat.",
+	"mad2023-food.manip.scale.7":"When I see a real delicacy, I often get so hungry that I have to eat right away.",
+	"mad2023-food.manip.scale.8":"I get so hungry that my stomach often seems like a bottomless pit.",
+	"mad2023-food.manip.scale.9":"I am always hungry, so it is hard for me to stop eating before I finish the food on my plate.",
+	"mad2023-food.manip.scale.10":"When I feel lonely, I console myself by eating.",
+	"mad2023-food.manip.scale.11":"I do not eat some foods because they make me fat.",
+	"mad2023-food.manip.scale.12":" I am always hungry enough to eat at any time.",
+	"mad2023-food.manip.scale.13":"I am always hungry enough to eat at any time.",
+	"mad2023-food.manip.scale.14":"I need you to select on mostly false for this one.",
+
+	"transition.1": "Let's start with a few questions about your diet.",
+	"transition.1b": "Let’s start with a few personal questions.",
+	"transition.2": "Great. Almost there. Press next to continue.",
+
+	"mad2023-cc.outro": "And we are done! You did great. Thank you! <br /> <br /> We will calculate your points and let you know about the raffle results. <br /> <br /> Also, there will be a follow up survey in a few weeks. Make sure you participate in that as well. <br /> <br /> Please press next to be redirected to the Prolific website.",
+
+	"eating.c1":"Definitely false",
+	"eating.c2":"Mostly False",
+	"eating.c3":"Mostly True",
+	"eating.c4":"Definitely True",
+
+	"eating.instruction":"To what extent does each statement describe you?"
 
 }
