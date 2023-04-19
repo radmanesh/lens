@@ -265,22 +265,22 @@
       "text":"taskswitch.instruction",
       "help":"taskswitch.help",
       "trials": {
-        "total": 120,
+        "total": 80,
         "top":{
-          "total": 60,
-          "go": 30,
-          "left": 30,
-          "leftGo": 15,
+          "total": 40,
+          "go": 20,
+          "left": 20,
+          "leftGo": 10,
           "choices": {
             "go": "blue-star",
             "nogo": "star"
           }
         },
         "bottom":{
-          "total": 60,
-          "go": 30,
-          "left":30,
-          "leftGo": 15,
+          "total": 40,
+          "go": 20,
+          "left": 20,
+          "leftGo": 10,
           "choices": {
             "go": "star",
             "nogo": "blue-star"
