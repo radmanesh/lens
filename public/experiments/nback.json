@@ -30,6 +30,44 @@
 			]
 		},
     {
+      "id": "NBack Practice",
+      "type": "nback",
+      "text": "nback.instruction",
+      "help": "nback.help",
+      "trials": 25,
+      "nback": 2,
+      "stimuli" : [
+        {
+          "type": "letter",
+          "name": "A",
+          "amount": 5
+        },
+        {
+          "type": "letter",
+          "name": "B",
+          "amount": 5
+        },
+        {
+          "type": "letter",
+          "name": "C",
+          "amount": 5
+        },
+        {
+          "type": "letter",
+          "name": "D",
+          "amount": 5
+        },
+        {
+          "type": "letter",
+          "name": "E",
+          "amount": 5
+        }
+      ],
+      "stimuliDuration": 2000,
+      "fixationDuration": 500,
+      "feedbackDuration": 500
+    },
+    {
       "id": "NBack Test Demo Letters",
       "type": "nback",
       "text": "nback.instruction",
