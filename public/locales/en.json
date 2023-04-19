@@ -136,7 +136,7 @@
 	"ownership.c8": "over 14 hours ago",
 
 	"gonogo.introduction": "Great. We're almost done.<br /><br />Next is Go-NoGo game. For this task, you need to use the right (&#8594;) or left (&#8592;) keys on your keyboard. You'll briefly see the shape of a blue or yellow star on the left or on the right side of the screen.<br /><br />If you see a blue star, you should press the key that matches the **same** side as the star. If you see a yellow star, you should press the key that points at the **opposite** side.<br /><br />You have 1 second to respond but faster and accurate responses will get you more bonus points. <br /><br />Let's start round 1 with feedback.",
-	"gonogo.introduction.2": "Great. In the first task, you'll briefly see the shape of a blue or yellow star on the left or on the right side of the screen.<br /><br />If you see a blue star, you should press the key that matches the **same** side as the star. If you see a yellow star, you should press the key that points at the **opposite** side.<br /><br />You have 1 second to respond but faster and accurate responses will get you more bonus points.<br /><br />You can use your mouse, or the right (&#8594;) or left (&#8592;) keys on your keyboard.<br /><br />Let's start round 1 with feedback.",
+	"gonogo.introduction.2": "Great. <br /><br />In the first task, you'll briefly see the shape of a blue or yellow star on the left or on the right side of the screen.<br /><br />If you see a blue star, you should click on it. If you see a yellow star, you should click on the **opposite** side.<br /><br />You have 1 second to respond but faster and accurate responses will get you more bonus points.<br /><br />You can use your mouse, or the right (&#8594;) or left (&#8592;) keys on your keyboard.<br /><br />Let's start round 1 with feedback.",
 	"gonogo.are_you_ready": "Place your fingers on the &#8594; and &#8592; keys. Press the space bar to begin.",
 	"gonogo.too_many_timeouts": "You waited too long! Let's start over.",
 	"gonogo.restart": "Restart",
@@ -144,8 +144,8 @@
 	"gonogo.instruction": "Use &#8594; and &#8592; keys. Same side for blue star, opposite side for yellow star. Be quick!",
 	"gonogo.main.introduction": "Ok, so let's begin round 2. You will not receive feedback. Press next to begin.",
 
-	"gonogo.intro2.text":"Great. In the next task, we show you the numbers **0 to 9** briefly on the screen. You have to click on all the numbers except when for **0 and 7**. When you see **0 and 7**, don't do anything. Just wait. For other numbers, click on the numebr, or press the space bar as quickly as you can. Faster responses get you more points. Press next to continue.",
-	"gonogoalt.instruction.2":"Quick, click on the numbers, except for **0 or 7**. When you see 0 or 7, just wait. Don't do anything!",
+	"gonogo.intro2.text":"Great. In the next task, we show you the numbers **0 to 9** briefly on the screen. You have to click on the numbers, except when for **0 and 7**.<br /><br />When you see **0 and 7**, don't do anything. Just wait. <br /><br />You can click on the numbers or press the space bar to respond. Faster responses get you more points. <br /><br />Press next to continue.",
+	"gonogoalt.instruction.2":"Quick, click on the numbers, except when it's **0 or 7**. When you see 0 or 7, don't do anything! Just wait.",
 
 
 	"ramadan2020.questions.email": "What is your email?",
@@ -157,7 +157,7 @@
 	"colors.red": "Red",
 
 	"stroop_demo.rule": "Quick, what's the color of this text? Use &#8594; and &#8592; keys.",
-	"stroop.practice.introduction": "In the next task, you'll see color names written in different inks on top.<br /><br />You have two choices on the bottom. Using the right (&#8594;) or left (&#8592;) keys on your keyboard, you should select the **word** that matches the **color** of the text on top. So,\n- For <span style='color:red'>*GREEN*</span> or <span style='color:red'>*RED*</span>, you can choose <span style='color:red'>*RED*</span> or <span style='color:green'>*RED*</span>.\n- For <span style='color:green'>*RED*</span> or <span style='color:green'>*GREEN*</span>, you can choose <span style='color:red'>*GREEN*</span> or <span style='color:green'>*GREEN*</span>.\n\nAgain, accurate and quick responses get more bonus points. Press next to begin the first round (you'll get feedback about your responses).",
+	"stroop.practice.introduction": "In the next task, you'll see color names written in different inks on top.<br /><br />You have two choices on the bottom. Using the right (&#8594;) or left (&#8592;) keys on your keyboard, you should select the **word** that matches the **color** of the text on top. So,\n- For <span style='color:red'>*GREEN*</span> or <span style='color:red'>*RED*</span>, you should choose <span style='color:red'>*RED*</span> or <span style='color:green'>*RED*</span>.\n- For <span style='color:green'>*RED*</span> or <span style='color:green'>*GREEN*</span>, you should choose <span style='color:red'>*GREEN*</span> or <span style='color:green'>*GREEN*</span>.\n\nAgain, accurate and quick responses get more bonus points. Press next to begin the first round (you'll get feedback about your responses).",
 	"stroop.main.introduction": "Now the second round begins. You will not receive feedback this time. Press next to continue.",
 
 	"trust.q": "How much you agree or disagree with the following statements:",
@@ -681,7 +681,7 @@
 	"taskswitch.too_many_timeouts": "You waited too long! Let's start over.",
 	"taskswitch.restart": "Restart",
 	"taskswitch.start": "Start",
-	"taskswitch.instruction": "Use &#8594; and &#8592; keys, or click on symbols. **Be quick!**",
+	"taskswitch.instruction": "**Top**: select Blue, avoid Yellow. **Bottom**: avoid blue, select Yellow. <br /> <br />Use &#8594; and &#8592; keys, or click on symbols.**Be quick!**",
 	"taskswitch.main.introduction": "Ok, so let's begin round 2. You will not receive feedback. Press next to begin.",
 	"taskswitch.tutorial": "Use &#8594; and &#8592; keys. <br /> If the symbols are placed above the divider line you should focus only on shape of those Symbols, same side for the (blue/yellow) Circle, opposite side for the Star. <br /> If the symbols are placed below the divider line you should only focus on the color, Same side for Yellow, opposite side for blue. <br /> **Be quick!**",
 
@@ -699,11 +699,18 @@
 	"gonogoalt.help": "Press any key or click on symbol per instruction in less than three seconds.",
 	
 	"taskswitch.intro0.text":"Great. we're half way there! Press next to begin the next task.",
-	"taskswitch.intro1.text": "The next task requires your focus and attention.<br /> <br />In each trial, a star will appear in one of four boxes. The star can be yellow or blue. <br /> <br />Press next to see how you should respond.",
+	"taskswitch.intro1.text": "The next task requires your focus and attention.<br /> <br />In each trial, a star will appear in one of four boxes. It can be yellow or blue. <br /> <br />Press next to see how you should respond.",
 	"taskswitch.intro2.text": "For stars that appear in the **top** boxes, you should click on the BLUE stars:<br /><br /><img src='./images/taskswitch.top2.png' width='100%' /> <br />For YELLOW stars, click on the opposite side (the empty box next to it):<img src='./images/taskswitch.top1.png' width='100%' />",
-	"taskswitch.intro3.text": "When stars appear in the **bottom** two boxes, you should click on the YELLOW stars: <br /> <img src='./images/taskswitch.top3.png' width='100%' /><br /> And click on the opposite side when you see a BLUE star (the empty box next to it): <br /> <img src='./images/taskswitch.top4.png' width='100%' />",
-	"taskswitch.intro4.text": "So, in the **top**, select the blue & avoid the yellow. In the **bottom**, select the yellow & avoid the blue.<br /><br />Try to respond as accurately and quickly as possible. <br /><br />Faster accurate response get you more **points** and increase your chance in a raffle.<br /><br />You can also use &#8594; and &#8592; keys to answer.",
+	"taskswitch.intro3.text": "When stars appear in the **bottom** boxes, you should click on the YELLOW stars: <br /> <img src='./images/taskswitch.top3.png' width='100%' /><br /> And click on the opposite side when you see a BLUE star (the empty box next to it): <br /> <img src='./images/taskswitch.top4.png' width='100%' />",
+	"taskswitch.intro4.text": "So, in the **top**, select the blue & avoid the yellow. In the **bottom**, select the yellow & avoid the blue.<br /><br />Try to respond as accurately and quickly as possible. <br /><br />Faster and accurate responses get you more **points** and increase your chance in a raffle.<br /><br />You can also use &#8594; and &#8592; keys to answer.",
 	"taskswitch.intro5.text": "In the first few rounds, you will recevie feedback about your response accuracy. Press next when you're ready.",
+	"taskswitch.check.text": "Given the previous intructions, which one accurate?",
+
+
+	"taskswitch.check.c1":"click on blue stars when they appear on the bottom row.",
+	"taskswitch.check.c2":"click on yellow stars when they appear in the top row.",
+	"taskswitch.check.c3":"click on blue stars when they appear in the top row.",
+
 
 	"ultimatum.2023.cont.intro1": "In this study, you will be **randomly** paired with other **prolific respondents and complete a task**. <br /> <br /> a. The task involves allocating **ten (10) points**. <br /> b. These points will determine your chance to **win a $30 raffle**. <br /> c. Press next to learn about the rules of the task. ",
 	"ultimatum.2023.cont.intro2": "Press next to learn about the task configuration.",
@@ -714,6 +721,8 @@
 	"ultimatum.2023.cont.done1": "Thanks for your participation. The study is complete.",
 	"ultimatum.2023.cont.done2": "We will administer the second round of the study in a few weeks. Please wait until all results are in, and we‘ll update you about the raffle. Thanks again for your participation. <br /> <br /> Press Next to be redirected to the Prolific webpage.",
 	"mad2023-ultimatum-3cond-dialog-text": "Next you will be paired with the other participant",
+
+
 
 	"mad2023-ultimatum.c-set.p1.field1.content":"No ID",
 	"mad2023-ultimatum.c-set.p2.field1.content":"Ingrid",
@@ -757,6 +766,12 @@
 	"mad2023-food.manip.scale.10":"When I feel lonely, I console myself by eating.",
 	"mad2023-food.manip.scale.11":"I do not eat some foods because they make me fat.",
 	"mad2023-food.manip.scale.12":" I am always hungry enough to eat at any time.",
+	"mad2023-food.manip.scale.13":"I am always hungry enough to eat at any time.",
+	"mad2023-food.manip.scale.14":"I need you to select on mostly false for this one.",
+
+	"transition.1":"Let's start with a few questions baout your diet.",
+	"transition.2":"Great. Almost there. Press next to continue.",
+
 
 	"eating.c1":"Definitely false",
 	"eating.c2":"Mostly False",

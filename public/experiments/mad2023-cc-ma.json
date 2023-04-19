@@ -24,6 +24,12 @@
       "instruction": true,
       "text": "intro"
     },
+    {
+      "id": "introduction",
+      "type": "text",
+      "instruction": true,
+      "text": "transition.1"
+    },
 		{
 			"id": "food.reminder",
 			"type": "matrix",
@@ -181,7 +187,8 @@
       "requiredQuestions": [
         0,
         1,
-        2
+        2,
+        5
       ],
       "direction": "vertical",
       "choices": [
@@ -203,7 +210,8 @@
         "mad2023-food.manip.scale.10",
         "mad2023-food.manip.scale.11",
         "mad2023-food.manip.scale.12",
-        "mad2023-food.manip.scale.13"
+        "mad2023-food.manip.scale.13",
+        "mad2023-food.manip.scale.14"
       ]
     },  
     {
@@ -231,11 +239,26 @@
       "text": "taskswitch.intro4.text"
     },
     {
+			"id": "taskswitch.check",
+			"type": "matrix",
+			"text": "",
+			"requiredQuestions": [
+				0
+			],
+			"direction": "vertical",
+			"choices": [
+				"taskswitch.check.c1",
+				"taskswitch.check.c2",
+				"taskswitch.check.c3"
+			],
+			"questions": ["taskswitch.check.text"]
+		},    
+    {
       "id": "taskswitch.intro5",
       "type": "text",
       "instruction": true,
       "text": "taskswitch.intro5.text"
-    },
+    },    
     {
       "id": "TaskSwitch Demo",
       "type":"simplified_taskswitch",
@@ -270,7 +293,12 @@
       "feedbackDuration": 500,
       "timeoutsBeforeReset": 20
     },
-
+    {
+      "id": "introduction",
+      "type": "text",
+      "instruction": true,
+      "text": "transition.2"
+    },
     {
       "id": "stroop.practice.introduction",
       "type": "text",
