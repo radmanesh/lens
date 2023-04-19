@@ -82,29 +82,6 @@
       "stimuliDuration": 2000,
       "fixationDuration": 500,
       "feedbackDuration": 500
-    },
-    {
-      "id": "gonogo with letters",
-      "type":"gonogoalt",
-      "text":"gonogoalt.instruction",
-      "help":"gonogoalt.help",
-      "trials": {
-        "total": 120,
-        "go": 97
-      },
-      "stimuliDuration": 2000,
-      "fixationDuration": 500, 
-      "feedbackDuration": 500,
-      "choices": {
-        "go": {
-          "type": "letter",
-          "names": ["B","C","D","F","G","H","J","K","L","M","N","P","Q","R","S","T","V","W","X","Y","Z"]
-        },
-        "nogo": {
-          "type": "letter",
-          "names":["A","E","I","O","U"] 
-        }
-      }
     }
   ]
 }
