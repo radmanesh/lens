@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import {Grid} from '@material-ui/core';
+import {Grid} from '@mui/material';
 import ReactMarkdown from 'react-markdown';
 import {useTranslation} from 'react-i18next';
 import ReactGA from "react-ga4";

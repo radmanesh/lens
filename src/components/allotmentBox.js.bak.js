@@ -2,10 +2,11 @@ import React, { Fragment, memo } from 'react';
 import { useDrag, useDrop, DragPreviewImage } from 'react-dnd';
 import { useTranslation } from 'react-i18next';
 import { languages } from '../utils/i18n';
-import MonetizationOnIcon from "@material-ui/icons/MonetizationOn";
+import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
 import { ltrTheme, rtlTheme } from '../utils/theme';
-import { grey, teal, blueGrey } from '@material-ui/core/colors';
-import { Avatar, Grid, makeStyles, Paper, Typography } from '@material-ui/core';
+import { grey, teal, blueGrey } from '@mui/material/colors';
+import { Avatar, Grid, Paper, Typography } from '@mui/material';
+import makeStyles from '@mui/styles/makeStyles';
 import { useParams } from 'react-router-dom';
 
 // Item types of draggable components

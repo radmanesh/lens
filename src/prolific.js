@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import { TextField, Grid } from '@material-ui/core';
+import { TextField, Grid } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import ReactMarkdown from 'react-markdown';
 import { useLocation } from 'react-router-dom';

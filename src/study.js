@@ -2,8 +2,17 @@ import React, {useRef, useState, useEffect} from 'react';
 
 import {useParams,useLocation} from 'react-router-dom';
 
-import {Container, ThemeProvider, CssBaseline, LinearProgress, Grid, Paper, Snackbar} from '@material-ui/core';
-import {Alert} from '@material-ui/lab';
+import {
+  Container,
+  ThemeProvider,
+  StyledEngineProvider,
+  CssBaseline,
+  LinearProgress,
+  Grid,
+  Paper,
+  Snackbar,
+} from '@mui/material';
+import { Alert } from '@mui/material';
 
 import {ltrTheme, rtlTheme} from './utils/theme';
 import {languages} from './utils/i18n';
