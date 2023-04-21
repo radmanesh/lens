@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState, Fragment } from 'react';
 import { TextField, Grid } from '@material-ui/core';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import { useTranslation } from 'react-i18next';
-import Markdown from 'react-markdown/with-html';
+import ReactMarkdown from 'react-markdown';
 
 import countries from './utils/countries';
 
@@ -91,7 +91,7 @@ export default function Text({content, onStore, onValidate}) {
   return (
     <Grid container direction='column' spacing={2} alignItems='stretch' justifyContent='flex-start' className='Text-container'>
       <Grid item>
-        <Markdown source={t(content.text)} escapeHtml={false} className='markdown-text' />
+        <ReactMarkdown source={t(content.text)} escapeHtml={false} className='markdown-text' />
       </Grid>
 
       {!(content.instruction || false) &&

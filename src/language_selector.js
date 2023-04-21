@@ -7,7 +7,7 @@ import {ltrTheme} from './utils/theme';
 
 import {Grid, Paper, Button, ThemeProvider, CssBaseline, Container} from '@material-ui/core';
 
-import Markdown from 'react-markdown/with-html';
+import ReactMarkdown from 'react-markdown';
 
 import {languages} from './utils/i18n';
 
@@ -32,7 +32,7 @@ export default function LanguageSelector(props) {
         >
           <Paper className='languages-container'>
 
-          <Markdown source={t('language_selector.text')} escapeHtml={false}  className='markdown-text' />
+          <ReactMarkdown source={t('language_selector.text')} escapeHtml={false}  className='markdown-text' />
           <Grid container direction='row' spacing={3} justifyContent='space-around'>
           {Object.entries(languages).map(([key, val]) => 
             <Grid item key={key} xs={4}>

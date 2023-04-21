@@ -16,8 +16,8 @@ import Submission from './submission';
 import BART from './bart';
 import GoNoGo from './gonogo';
 import Stroop from './stroop';
-import Ultimatum from './ultimatum';
-import Dictator from './dictator';
+//import Ultimatum from './ultimatum';
+//import Dictator from './dictator';
 import { useTranslation } from 'react-i18next';
 import TaskSwitch from './taskswitch';
 import SimplifiedTaskSwitch from './simplified_taskswitch';
@@ -144,10 +144,10 @@ export default function Study(props) {
         return <Stroop onStore={storeData} content={view} key={view.id} />;
       case 'matrix':
         return <Matrix onStore={storeData} content={view} key={view.id} onValidate={(r) => responseIsValid.current = r} />
-      case 'ultimatum':
-        return <Ultimatum onStore={storeData} content={view} key={view.id} onNotification={setNotification} />;
-      case 'dictator':
-        return <Dictator onStore={storeData} content={view} key={view.id} onNotification={setNotification} />;
+      // case 'ultimatum':
+      //   return <Ultimatum onStore={storeData} content={view} key={view.id} onNotification={setNotification} />;
+      // case 'dictator':
+      //   return <Dictator onStore={storeData} content={view} key={view.id} onNotification={setNotification} />;
       case 'taskswitch':
         return <TaskSwitch onStore={storeData} onProgress={updateViewProgress} content={view} key={view.id} onNotification={setNotification} />;
       case 'simplified_taskswitch':

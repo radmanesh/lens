@@ -1,10 +1,6 @@
 import React from 'react';
 
-import {
-  HashRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 //main components
 import Study from './study';
@@ -13,13 +9,11 @@ import LanguageSelector from './language_selector';
 
 export default function AppRouter() {
   return (
-    <Router basename="/">
-        <Switch>
-          <Route exact path="/"><About /></Route>
-          <Route path="/:studyId/:lang"><Study /></Route>
-          <Route path="/:studyId"><LanguageSelector /></Route>
-          <Route path="/about"><About /></Route>
-        </Switch>
-    </Router>
+    <Routes basename="/">
+        <Route exact path="/" element={<About />} />
+        <Route path="/:studyId/:lang" element={<Study />} />
+        <Route path="/:studyId" element={<LanguageSelector />} />
+        <Route path="/about" element={<About />} />
+    </Routes>
   );
 }

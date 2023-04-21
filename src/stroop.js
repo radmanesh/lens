@@ -13,7 +13,7 @@ import shuffle from './utils/shuffle';
 
 import Image from 'material-ui-image';
 
-import Markdown from 'react-markdown/with-html';
+import ReactMarkdown from 'react-markdown';
 
 import {useTranslation} from 'react-i18next';
 
@@ -241,7 +241,7 @@ export default function Stroop({content, onStore}) {
   const renderStartScreen = () => {
     return (
       <Grid container direction='column' spacing={2} alignItems='center'>
-        <Grid item><Markdown source={t('stroop.are_you_ready')} escapeHtml={false} className='markdown-text' /></Grid>
+        <Grid item><ReactMarkdown source={t('stroop.are_you_ready')} escapeHtml={false} className='markdown-text' /></Grid>
         <Grid item>
           <Button variant='outlined' onClick={() => startTask()}>{t('stroop.start')}</Button>
         </Grid>
@@ -253,7 +253,7 @@ export default function Stroop({content, onStore}) {
   const renderResetScreen = () => {
     return (
       <Grid container direction='column' spacing={2} alignItems='center' justify='flex-start' className='Text-container'>
-        <Grid item><Markdown source={t('stroop.too_many_timeouts')} escapeHtml={false} className='markdown-text' /></Grid>
+        <Grid item><ReactMarkdown source={t('stroop.too_many_timeouts')} escapeHtml={false} className='markdown-text' /></Grid>
         <Grid item>
           <Button variant='outlined' color='secondary' onClick={() => startTask()}>{t('stroop.restart')}</Button>
         </Grid>
@@ -275,7 +275,7 @@ export default function Stroop({content, onStore}) {
     return (
         <Grid item container direction='column' spacing={2} alignItems='stretch' justify='flex-start' className='stroop-container stroop-board'>
           <Grid item>
-            <Markdown source={t(rule)} escapeHtml={false} className='markdown-text' />
+            <ReactMarkdown source={t(rule)} escapeHtml={false} className='markdown-text' />
           </Grid>
 
           {state.trial<=trials.length && 
