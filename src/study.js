@@ -191,8 +191,6 @@ export default function Study(props) {
 
   //render
   return (
-
-    <ThemeProvider theme={theme}>
       <div dir={languages[lang].direction}>
         <CssBaseline />
 
@@ -228,6 +226,5 @@ export default function Study(props) {
           </Grid>
         </Container>
       </div>
-    </ThemeProvider>
   );
 }
