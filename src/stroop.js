@@ -11,9 +11,8 @@ import {
 
 import shuffle from './utils/shuffle';
 
-import Image from 'material-ui-image';
-
 import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw'
 
 import {useTranslation} from 'react-i18next';
 
@@ -240,7 +239,7 @@ export default function Stroop({content, onStore}) {
   const renderStartScreen = () => {
     return (
       <Grid container direction='column' spacing={2} alignItems='center'>
-        <Grid item><ReactMarkdown source={t('stroop.are_you_ready')} escapeHtml={false} className='markdown-text' /></Grid>
+        <Grid item><ReactMarkdown children={t('stroop.are_you_ready')} rehypePlugins={[rehypeRaw]} className='markdown-text' /></Grid>
         <Grid item>
           <Button variant='outlined' onClick={() => startTask()}>{t('stroop.start')}</Button>
         </Grid>
@@ -252,7 +251,7 @@ export default function Stroop({content, onStore}) {
   const renderResetScreen = () => {
     return (
       <Grid container direction='column' spacing={2} alignItems='center' justifyContent='flex-start' className='Text-container'>
-        <Grid item><ReactMarkdown source={t('stroop.too_many_timeouts')} escapeHtml={false} className='markdown-text' /></Grid>
+        <Grid item><ReactMarkdown children={t('stroop.too_many_timeouts')} rehypePlugins={[rehypeRaw]} className='markdown-text' /></Grid>
         <Grid item>
           <Button variant='outlined' color='secondary' onClick={() => startTask()}>{t('stroop.restart')}</Button>
         </Grid>
@@ -274,7 +273,7 @@ export default function Stroop({content, onStore}) {
     return (
       <Grid item container direction='column' spacing={2} alignItems='stretch' justifyContent='flex-start' className='stroop-container stroop-board'>
         <Grid item>
-          <ReactMarkdown source={t(rule)} escapeHtml={false} className='markdown-text' />
+         <ReactMarkdown children={t(rule)} rehypePlugins={[rehypeRaw]} className='markdown-text' />
         </Grid>
 
         {state.trial<=trials.length && 

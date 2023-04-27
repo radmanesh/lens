@@ -2,6 +2,8 @@ import React, { useRef, useEffect, useState } from 'react';
 import { TextField, Grid } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw'
+
 import { useLocation } from 'react-router-dom';
 
 //css
@@ -64,7 +66,7 @@ export default function Prolific({content, onStore, onValidate}) {
   return (
     <Grid container direction='column' spacing={2} alignItems='stretch' justifyContent='flex-start' className='Text-container'>
       <Grid item>
-        <ReactMarkdown source={t(content.text)} escapeHtml={false} className='markdown-text' />
+       <ReactMarkdown children={t(content.text)} rehypePlugins={[rehypeRaw]} className='markdown-text' />
       </Grid>
 
       {!(content.instruction || false) &&

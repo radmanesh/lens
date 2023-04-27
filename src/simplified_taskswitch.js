@@ -12,6 +12,7 @@ import {
 } from '@mui/icons-material';
 
 import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw'
 
 import { shuffle } from './utils/random';
 import { useTranslation } from 'react-i18next';
@@ -297,7 +298,7 @@ export default function SimplifiedTaskSwitch({ content, onStore, onProgress }) {
   if (state.step === 'reset') {
     return (
       <Grid container direction='column' spacing={2} alignItems='center' justifyContent='flex-start' className='Text-container'>
-        <Grid item><ReactMarkdown source={t('taskswitch.too_many_timeouts')} escapeHtml={false} className='markdown-text' /></Grid>
+        <Grid item><ReactMarkdown children={t('taskswitch.too_many_timeouts')} rehypePlugins={[rehypeRaw]} className='markdown-text' /></Grid>
         <Grid item>
           <Button variant='outlined' color='secondary' onClick={() => startTask()}>{t('taskswitch.restart')}</Button>
         </Grid>
@@ -310,7 +311,7 @@ export default function SimplifiedTaskSwitch({ content, onStore, onProgress }) {
   if (state.trial === null) {
     return (
       <Grid container direction='column' spacing={2} alignItems='center' justifyContent='flex-start' className='Text-container'>
-        <Grid item><ReactMarkdown source={t('taskswitch.are_you_ready')} escapeHtml={false} className='markdown-text' /></Grid>
+        <Grid item><ReactMarkdown children={t('taskswitch.are_you_ready')} rehypePlugins={[rehypeRaw]} className='markdown-text' /></Grid>
         <Grid item>
           <Button variant='outlined' onClick={() => startTask()}>{t('taskswitch.start')}</Button>
         </Grid>
@@ -321,7 +322,7 @@ export default function SimplifiedTaskSwitch({ content, onStore, onProgress }) {
   return (
     <Grid item container direction='column' spacing={2} alignItems='stretch' justifyContent='flex-start' className='ts-container'>
       <Grid item>
-        <ReactMarkdown source={t(text)} escapeHtml={false} className='markdown-text' />
+       <ReactMarkdown children={t(text)} escapeHtml={false} className='markdown-text' />
       </Grid>
 
       {state.step === 'stimuli' && renderStimuli(state.stimuli[state.trial - 1])}

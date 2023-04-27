@@ -3,6 +3,7 @@ import { TextField, Grid } from '@mui/material';
 import Autocomplete from '@mui/material/Autocomplete';
 import { useTranslation } from 'react-i18next';
 import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw'
 
 import countries from './utils/countries';
 
@@ -91,7 +92,7 @@ export default function Text({content, onStore, onValidate}) {
   return (
     <Grid container direction='column' spacing={2} alignItems='stretch' justifyContent='flex-start' className='Text-container'>
       <Grid item>
-        <ReactMarkdown source={t(content.text)} escapeHtml={false} className='markdown-text' />
+        <ReactMarkdown rehypePlugins={[rehypeRaw]} children={t(content.text)} className='markdown-text' />
       </Grid>
 
       {!(content.instruction || false) &&

@@ -287,7 +287,7 @@ export default function GoNoGoAlt({content, onStore, onProgress, onNotification}
   if (state.trial === null) {
     return (
       <Grid container direction='column' spacing={2} alignItems='center' justifyContent='flex-start' className='Text-container'>
-        <Grid item><ReactMarkdown source={t('gonogoalt.are_you_ready')} escapeHtml={false} className='markdown-text' /></Grid>
+        <Grid item><ReactMarkdown children={t('gonogoalt.are_you_ready')} rehypePlugins={[rehypeRaw]} className='markdown-text' /></Grid>
         <Grid item>
           <Button variant='outlined' onClick={() => startTask()}>{t('gonogoalt.start')}</Button>
         </Grid>
@@ -298,7 +298,7 @@ export default function GoNoGoAlt({content, onStore, onProgress, onNotification}
   return (
     <Grid item container direction='column' spacing={2} alignItems='stretch' justifyContent='flex-start' className='gonogoalt-container'>
       <Grid item>
-        <ReactMarkdown source={t(text)} escapeHtml={false} className='markdown-text' />
+        <ReactMarkdown children={t(text)} rehypePlugins={[rehypeRaw]} className='markdown-text' />
       </Grid>
       <Grid item container direction='row' justifyContent='center' alignItems='center' className='nback-main-container'>
         {state.step === 'stimuli'  && renderStimulus(state.stimuli[state.trial-1])}

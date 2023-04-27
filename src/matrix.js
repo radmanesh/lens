@@ -3,6 +3,8 @@ import React, {useEffect, useRef} from 'react';
 import {Grid, Radio, Tooltip, RadioGroup, FormControlLabel, Divider, Slider} from '@mui/material';
 
 import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw'
+
 import {useTranslation} from 'react-i18next';
 
 function ValueLabelComponent(props) {
@@ -90,7 +92,7 @@ export default function Matrix({content, onStore, onValidate}) {
   const renderQuestion = (q, index) => {
     return (
       <Grid item key={index} className='matrix-question-container'>
-      <ReactMarkdown source={t(q)} escapeHtml={false} className='markdown-text' />
+     <ReactMarkdown children={t(q)} rehypePlugins={[rehypeRaw]} className='markdown-text' />
       {slider && renderSlider(choices, index)}
       {!slider && 
         <RadioGroup name={`q${index}`} value={response.current.values[index]} onChange={(e) => handleChange(e, index)}>
@@ -110,7 +112,7 @@ export default function Matrix({content, onStore, onValidate}) {
     <Grid container direction='column' alignItems='stretch' justifyContent='flex-start' className='Text-container'>
       {text && 
       <Grid item>
-        <ReactMarkdown source={t(text)} escapeHtml={false} className='markdown-text' />
+       <ReactMarkdown children={t(text)} rehypePlugins={[rehypeRaw]} className='markdown-text' />
       </Grid>
       }
       {questions

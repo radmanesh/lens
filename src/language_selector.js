@@ -16,6 +16,7 @@ import {
 } from '@mui/material';
 
 import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw'
 
 import {languages} from './utils/i18n';
 
@@ -28,31 +29,29 @@ export default function LanguageSelector(props) {
 
 
   return (
-    <StyledEngineProvider injectFirst>
-      <ThemeProvider theme={ltrTheme}>
-        <CssBaseline />
+    <>
+    <CssBaseline />
 
-        <Container maxWidth="sm" className='study-container'>
-          <Grid item container
-            spacing={2}
-            direction="column"
-            justifyContent="flex-start"
-            alignItems="stretch"
-          >
-            <Paper className='languages-container'>
+    <Container maxWidth="sm" className='study-container'>
+      <Grid item container
+        spacing={2}
+        direction="column"
+        justifyContent="flex-start"
+        alignItems="stretch"
+        >
+        <Paper className='languages-container'>
 
-            <ReactMarkdown source={t('language_selector.text')} escapeHtml={false}  className='markdown-text' />
-            <Grid container direction='row' spacing={3} justifyContent='space-around'>
-            {Object.entries(languages).map(([key, val]) => 
-              <Grid item key={key} xs={4}>
-                <Button component={Link} to={`/${studyId}/${key}`} fullWidth variant='outlined'>{val.title}</Button>
-              </Grid>
-            )}
-            </Grid>
-            </Paper>
+        <ReactMarkdown children={t('language_selector.text')} rehypePlugins={[rehypeRaw]} className='markdown-text' />
+        <Grid container direction='row' spacing={3} justifyContent='space-around'>
+        {Object.entries(languages).map(([key, val]) =>
+          <Grid item key={key} xs={4}>
+            <Button component={Link} to={`/${studyId}/${key}`} fullWidth variant='outlined'>{val.title}</Button>
           </Grid>
-        </Container>
-      </ThemeProvider>
-    </StyledEngineProvider>
+        )}
+        </Grid>
+        </Paper>
+      </Grid>
+    </Container>
+    </>
   );
 }
