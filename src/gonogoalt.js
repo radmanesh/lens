@@ -20,6 +20,7 @@ import {
 } from '@mui/icons-material';
 
 import ReactMarkdown from 'react-markdown'
+import rehypeRaw from 'rehype-raw'
 
 import { sample, shuffle } from './utils/random';
 import { useTranslation } from 'react-i18next';

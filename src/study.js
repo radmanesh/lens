@@ -1,4 +1,4 @@
-import React, {useRef, useState, useEffect} from 'react';
+import React, {useRef, useState, useEffect, Fragment} from 'react';
 
 import {useParams,useLocation} from 'react-router-dom';
 
@@ -11,6 +11,7 @@ import {
   Grid,
   Paper,
   Snackbar,
+  Box,
 } from '@mui/material';
 import { Alert } from '@mui/material';
 
@@ -200,7 +201,7 @@ export default function Study(props) {
 
   //render
   return (
-      <div dir={languages[lang].direction}>
+      <Box dir={languages[lang].direction}>
         <CssBaseline />
 
         <LinearProgress variant="determinate" value={state.progress} />
@@ -234,6 +235,6 @@ export default function Study(props) {
             }
           </Grid>
         </Container>
-      </div>
+      </Box>
   );
 }
