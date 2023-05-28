@@ -42,13 +42,18 @@ export default function Text({content, onStore, onValidate}) {
     onValidate(resp !== undefined && resp.length>0);
   }
 
+  /**
+   * Componenet to select a country from a dropdown list.
+   * Enable this feature by adding `autoComplete:'coutries'` to the view.
+   */
   const CountryAutoComplete = () => {
     return (
       <Autocomplete
-        id="country-select-demo"
-        sx={{ width: 300 }}
+        id="country-select"
         options={countries}
         autoHighlight
+        onChange={(e, v) => handleChange(e, v)}
+        value={state.value}
         getOptionLabel={(option) => option.label}
         renderOption={(props, option) => (
           <Box component="li" sx={{ '& > img': { mr: 2, flexShrink: 0 } }} {...props}>
@@ -65,11 +70,13 @@ export default function Text({content, onStore, onValidate}) {
         renderInput={(params) => (
           <TextField
             {...params}
-            label="Choose a country"
+            label={t('text.choose_a_country')}
+            variant="outlined"
             inputProps={{
               ...params.inputProps,
               autoComplete: 'new-password', // disable autocomplete and autofill
             }}
+            className='country-select'
           />
         )}
       />
