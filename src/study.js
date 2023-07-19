@@ -1,11 +1,11 @@
-import React, {useRef, useState, useEffect, Fragment} from 'react';
+import React, {useRef, useState, useEffect} from 'react';
 
 import {useParams,useLocation} from 'react-router-dom';
 
 import {
   Container,
-  ThemeProvider,
-  StyledEngineProvider,
+  //ThemeProvider,
+  //StyledEngineProvider,
   CssBaseline,
   LinearProgress,
   Grid,
@@ -15,7 +15,7 @@ import {
 } from '@mui/material';
 import { Alert } from '@mui/material';
 
-import {ltrTheme, rtlTheme} from './utils/theme';
+//import {ltrTheme, rtlTheme} from './utils/theme';
 import {languages} from './utils/i18n';
 
 import Navigation from './navigation';
@@ -48,7 +48,7 @@ export default function Study(props) {
   // prolific shits
   let query = useQuery();
 
-  const theme = (languages[lang].direction === 'rtl')?rtlTheme:ltrTheme;
+  //const theme = (languages[lang].direction === 'rtl')?rtlTheme:ltrTheme;
   const responseIsValid = useRef(false);
 
   const [state, setState] = useState({
