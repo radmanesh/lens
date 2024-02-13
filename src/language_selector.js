@@ -5,9 +5,18 @@ import {useTranslation} from 'react-i18next';
 
 import {ltrTheme} from './utils/theme';
 
-import {Grid, Paper, Button, ThemeProvider, CssBaseline, Container} from '@material-ui/core';
+import {
+  Grid,
+  Paper,
+  Button,
+  ThemeProvider,
+  StyledEngineProvider,
+  CssBaseline,
+  Container,
+} from '@mui/material';
 
-import Markdown from 'react-markdown/with-html';
+import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw'
 
 import {languages} from './utils/i18n';
 
@@ -20,29 +29,29 @@ export default function LanguageSelector(props) {
 
 
   return (
-    <ThemeProvider theme={ltrTheme}>
-      <CssBaseline />
+    <>
+    <CssBaseline />
 
-      <Container maxWidth="sm" className='study-container'>
-        <Grid item container
-          spacing={2}
-          direction="column"
-          justifyContent="flex-start"
-          alignItems="stretch"
+    <Container maxWidth="sm" className='study-container'>
+      <Grid item container
+        spacing={2}
+        direction="column"
+        justifyContent="flex-start"
+        alignItems="stretch"
         >
-          <Paper className='languages-container'>
+        <Paper className='languages-container'>
 
-          <Markdown source={t('language_selector.text')} escapeHtml={false}  className='markdown-text' />
-          <Grid container direction='row' spacing={3} justifyContent='space-around'>
-          {Object.entries(languages).map(([key, val]) => 
-            <Grid item key={key} xs={4}>
-              <Button component={Link} to={`/${studyId}/${key}`} fullWidth variant='outlined'>{val.title}</Button>
-            </Grid>
-          )}
+        <ReactMarkdown children={t('language_selector.text')} rehypePlugins={[rehypeRaw]} className='markdown-text' />
+        <Grid container direction='row' spacing={3} justifyContent='space-around'>
+        {Object.entries(languages).map(([key, val]) =>
+          <Grid item key={key} xs={4}>
+            <Button component={Link} to={`/${studyId}/${key}`} fullWidth variant='outlined'>{val.title}</Button>
           </Grid>
-          </Paper>
+        )}
         </Grid>
-      </Container>
-    </ThemeProvider>
+        </Paper>
+      </Grid>
+    </Container>
+    </>
   );
 }

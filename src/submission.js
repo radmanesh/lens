@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
-import {Grid} from '@material-ui/core';
-import Markdown from 'react-markdown/with-html';
+import {Grid} from '@mui/material';
+import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw'
+
 import {useTranslation} from 'react-i18next';
 import ReactGA from "react-ga4";
 
@@ -65,7 +67,7 @@ export default function Submission({submission, studyId, submissionNote}) {
       
       {state.submissionCode &&
       <Grid item xs className="submission-container">
-        <Markdown source={t(submissionNote, {submissionCode: state.submissionCode})} escapeHtml={false}  className='markdown-text' />
+       <ReactMarkdown children={t(submissionNote, {submissionCode: state.submissionCode})} rehypePlugins={[rehypeRaw]} className='markdown-text' />
       </Grid>
       }
 

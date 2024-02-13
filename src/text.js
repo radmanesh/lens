@@ -1,8 +1,9 @@
-import React, { useRef, useEffect, useState, Fragment } from 'react';
-import { TextField, Grid } from '@material-ui/core';
-import Autocomplete from '@material-ui/lab/Autocomplete';
+import * as React from 'react';
+import { useRef, useEffect, useState, Fragment } from 'react';
+import { TextField, Grid , Box, Autocomplete} from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import Markdown from 'react-markdown/with-html';
+import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw'
 
 import countries from './utils/countries';
 
@@ -41,22 +42,11 @@ export default function Text({content, onStore, onValidate}) {
     onValidate(resp !== undefined && resp.length>0);
   }
 
-
   /**
    * Componenet to select a country from a dropdown list.
    * Enable this feature by adding `autoComplete:'coutries'` to the view.
    */
   const CountryAutoComplete = () => {
-
-    // ISO 3166-1 alpha-2 (No support for IE 11)
-    const countryToFlag = (isoCode) => {
-      return typeof String.fromCodePoint !== 'undefined'
-        ? isoCode
-            .toUpperCase()
-            .replace(/./g, (char) => String.fromCodePoint(char.charCodeAt(0) + 127397))
-        : isoCode;
-    }
-
     return (
       <Autocomplete
         id="country-select"
@@ -65,11 +55,17 @@ export default function Text({content, onStore, onValidate}) {
         onChange={(e, v) => handleChange(e, v)}
         value={state.value}
         getOptionLabel={(option) => option.label}
-        noOptionsText={t('text.no_options')}
-        renderOption={(option) => (
-          <Fragment>
-            <span>{countryToFlag(option.code)}</span> {option.label}
-          </Fragment>
+        renderOption={(props, option) => (
+          <Box component="li" sx={{ '& > img': { mr: 2, flexShrink: 0 } }} {...props}>
+            <img
+              loading="lazy"
+              width="20"
+              src={`https://flagcdn.com/w20/${option.code.toLowerCase()}.png`}
+              srcSet={`https://flagcdn.com/w40/${option.code.toLowerCase()}.png 2x`}
+              alt=""
+            />
+            {option.label} ({option.code}) +{option.phone}
+          </Box>
         )}
         renderInput={(params) => (
           <TextField
@@ -87,11 +83,10 @@ export default function Text({content, onStore, onValidate}) {
     );
   }
 
-
   return (
     <Grid container direction='column' spacing={2} alignItems='stretch' justifyContent='flex-start' className='Text-container'>
       <Grid item>
-        <Markdown source={t(content.text)} escapeHtml={false} className='markdown-text' />
+        <ReactMarkdown rehypePlugins={[rehypeRaw]} children={t(content.text)} className='markdown-text' />
       </Grid>
 
       {!(content.instruction || false) &&

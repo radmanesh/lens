@@ -2,10 +2,20 @@ import React, {useRef, useState, useEffect} from 'react';
 
 import {useParams,useLocation} from 'react-router-dom';
 
-import {Container, ThemeProvider, CssBaseline, LinearProgress, Grid, Paper, Snackbar} from '@material-ui/core';
-import {Alert} from '@material-ui/lab';
+import {
+  Container,
+  //ThemeProvider,
+  //StyledEngineProvider,
+  CssBaseline,
+  LinearProgress,
+  Grid,
+  Paper,
+  Snackbar,
+  Box,
+} from '@mui/material';
+import { Alert } from '@mui/material';
 
-import {ltrTheme, rtlTheme} from './utils/theme';
+//import {ltrTheme, rtlTheme} from './utils/theme';
 import {languages} from './utils/i18n';
 
 import Navigation from './navigation';
@@ -16,8 +26,8 @@ import Submission from './submission';
 import BART from './bart';
 import GoNoGo from './gonogo';
 import Stroop from './stroop';
-import Ultimatum from './ultimatum';
-import Dictator from './dictator';
+//import Ultimatum from './ultimatum';
+//import Dictator from './dictator';
 import { useTranslation } from 'react-i18next';
 import TaskSwitch from './taskswitch';
 import SimplifiedTaskSwitch from './simplified_taskswitch';
@@ -38,7 +48,7 @@ export default function Study(props) {
   // prolific shits
   let query = useQuery();
 
-  const theme = (languages[lang].direction === 'rtl')?rtlTheme:ltrTheme;
+  //const theme = (languages[lang].direction === 'rtl')?rtlTheme:ltrTheme;
   const responseIsValid = useRef(false);
 
   const [state, setState] = useState({
@@ -144,10 +154,10 @@ export default function Study(props) {
         return <Stroop onStore={storeData} content={view} key={view.id} />;
       case 'matrix':
         return <Matrix onStore={storeData} content={view} key={view.id} onValidate={(r) => responseIsValid.current = r} />
-      case 'ultimatum':
-        return <Ultimatum onStore={storeData} content={view} key={view.id} onNotification={setNotification} />;
-      case 'dictator':
-        return <Dictator onStore={storeData} content={view} key={view.id} onNotification={setNotification} />;
+      // case 'ultimatum':
+      //   return <Ultimatum onStore={storeData} content={view} key={view.id} onNotification={setNotification} />;
+      // case 'dictator':
+      //   return <Dictator onStore={storeData} content={view} key={view.id} onNotification={setNotification} />;
       case 'taskswitch':
         return <TaskSwitch onStore={storeData} onProgress={updateViewProgress} content={view} key={view.id} onNotification={setNotification} />;
       case 'simplified_taskswitch':
@@ -191,9 +201,7 @@ export default function Study(props) {
 
   //render
   return (
-
-    <ThemeProvider theme={theme}>
-      <div dir={languages[lang].direction}>
+      <Box dir={languages[lang].direction}>
         <CssBaseline />
 
         <LinearProgress variant="determinate" value={state.progress} />
@@ -227,7 +235,6 @@ export default function Study(props) {
             }
           </Grid>
         </Container>
-      </div>
-    </ThemeProvider>
+      </Box>
   );
 }

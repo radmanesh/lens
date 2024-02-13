@@ -1,8 +1,10 @@
 import React, {useEffect, useRef} from 'react';
 
-import {Grid, Radio, Tooltip, RadioGroup, FormControlLabel, Divider, Slider} from '@material-ui/core';
+import {Grid, Radio, Tooltip, RadioGroup, FormControlLabel, Divider, Slider} from '@mui/material';
 
-import Markdown from 'react-markdown/with-html';
+import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw'
+
 import {useTranslation} from 'react-i18next';
 
 function ValueLabelComponent(props) {
@@ -52,14 +54,14 @@ export default function Matrix({content, onStore, onValidate}) {
           max={choices.length}
           valueLabelDisplay="on"
         />
-        <Grid container direction='row' alignItems='stretch' justify='space-between'>
+        <Grid container direction='row' alignItems='stretch' justifyContent='space-between'>
           <Grid item className='mark'><em>{t(choices[0])}</em></Grid>
           {showMidMark && <Grid item className='mark'><em>{t(choices[Math.floor(choices.length/2)])}</em></Grid>}
           <Grid item className='mark'><em>{t(choices[choices.length-1])}</em></Grid>
         </Grid>
 
       </Grid>
-    )
+    );
   }
 
   const renderChoice = (c, index) => {
@@ -90,27 +92,27 @@ export default function Matrix({content, onStore, onValidate}) {
   const renderQuestion = (q, index) => {
     return (
       <Grid item key={index} className='matrix-question-container'>
-      <Markdown source={t(q)} escapeHtml={false} className='markdown-text' />
+     <ReactMarkdown children={t(q)} rehypePlugins={[rehypeRaw]} className='markdown-text' />
       {slider && renderSlider(choices, index)}
       {!slider && 
         <RadioGroup name={`q${index}`} value={response.current.values[index]} onChange={(e) => handleChange(e, index)}>
         <Grid container 
           direction={direction==='vertical'?'column':'row'} 
           alignItems='flex-start' 
-          justify="space-between">
+          justifyContent="space-between">
           {choices.map((c, j) => renderChoice(c, j))}
         </Grid>
         </RadioGroup>
       }
       </Grid>
-    ) 
+    ); 
   }
 
   return (
     <Grid container direction='column' alignItems='stretch' justifyContent='flex-start' className='Text-container'>
       {text && 
       <Grid item>
-        <Markdown source={t(text)} escapeHtml={false} className='markdown-text' />
+       <ReactMarkdown children={t(text)} rehypePlugins={[rehypeRaw]} className='markdown-text' />
       </Grid>
       }
       {questions

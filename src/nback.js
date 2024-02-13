@@ -1,7 +1,9 @@
 import React, { useEffect, useState, Fragment } from 'react';
-import { Box, Button, Grid, Typography } from '@material-ui/core';
+import { Box, Button, Grid, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import Markdown from 'react-markdown/with-html';
+import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw'
+
 import { 
   Star, 
   RadioButtonUnchecked as Circle,
@@ -16,7 +18,7 @@ import {
   Check as Correct,
   Clear as Incorrect,
   Add
-} from '@material-ui/icons';
+} from '@mui/icons-material';
 import { shuffle } from './utils/random';
 
 //css
@@ -307,7 +309,7 @@ export default function NBack({content, onStore, onNotification, onProgress}) {
   if (state.trial === null) {
     return (
       <Grid container direction='column' spacing={2} alignItems='center' justifyContent='flex-start' className='Text-container'>
-        <Grid item><Markdown source={t('nback.are_you_ready')} escapeHtml={false} className='markdown-text' /></Grid>
+        <Grid item><ReactMarkdown children={t('nback.are_you_ready')} rehypePlugins={[rehypeRaw]} className='markdown-text' /></Grid>
         <Grid item>
           <Button variant='outlined' onClick={() => startTask()}>{t('nback.start')}</Button>
         </Grid>
@@ -318,7 +320,7 @@ export default function NBack({content, onStore, onNotification, onProgress}) {
   return (
     <Grid container direction='column' spacing={2} alignItems='stretch' justifyContent='flex-start' className='nback-container'>
       <Grid item>
-        <Markdown source={t(text)} escapeHtml={false} className='markdown-text' />
+       <ReactMarkdown children={t(text)} rehypePlugins={[rehypeRaw]} className='markdown-text' />
       </Grid>
       <Grid item container direction='row' justifyContent='center' alignItems='center' className='nback-main-container'>
         {state.step === 'stimuli'  && renderStimulus(state.stimuli[state.trial-1])}

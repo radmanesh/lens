@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useCallback, Fragment, useRef} from 'react';
 
 
-import { Button, Grid, Typography, Divider, Box} from '@material-ui/core';
+import { Button, Grid, Typography, Divider, Box} from '@mui/material';
 
 import { 
   Star, 
@@ -17,9 +17,10 @@ import {
   Block,
   Check as Correct,
   Clear as Incorrect
-} from '@material-ui/icons';
+} from '@mui/icons-material';
 
-import Markdown from 'react-markdown/with-html';
+import ReactMarkdown from 'react-markdown'
+import rehypeRaw from 'rehype-raw'
 
 import { sample, shuffle } from './utils/random';
 import { useTranslation } from 'react-i18next';
@@ -287,7 +288,7 @@ export default function GoNoGoAlt({content, onStore, onProgress, onNotification}
   if (state.trial === null) {
     return (
       <Grid container direction='column' spacing={2} alignItems='center' justifyContent='flex-start' className='Text-container'>
-        <Grid item><Markdown source={t('gonogoalt.are_you_ready')} escapeHtml={false} className='markdown-text' /></Grid>
+        <Grid item><ReactMarkdown children={t('gonogoalt.are_you_ready')} rehypePlugins={[rehypeRaw]} className='markdown-text' /></Grid>
         <Grid item>
           <Button variant='outlined' onClick={() => startTask()}>{t('gonogoalt.start')}</Button>
         </Grid>
@@ -298,7 +299,7 @@ export default function GoNoGoAlt({content, onStore, onProgress, onNotification}
   return (
     <Grid item container direction='column' spacing={2} alignItems='stretch' justifyContent='flex-start' className='gonogoalt-container'>
       <Grid item>
-        <Markdown source={t(text)} escapeHtml={false} className='markdown-text' />
+        <ReactMarkdown children={t(text)} rehypePlugins={[rehypeRaw]} className='markdown-text' />
       </Grid>
       <Grid item container direction='row' justifyContent='center' alignItems='center' className='nback-main-container'>
         {state.step === 'stimuli'  && renderStimulus(state.stimuli[state.trial-1])}

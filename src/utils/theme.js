@@ -1,8 +1,8 @@
-import {createMuiTheme, responsiveFontSizes} from '@material-ui/core';
+import { createTheme, responsiveFontSizes, adaptV4Theme } from '@mui/material';
 
-const darkTheme = createMuiTheme({
+const darkTheme = createTheme(adaptV4Theme({
   palette: {
-    type: 'dark',
+    mode: 'dark',
     primary: {
       main: '#039be5'
     },
@@ -25,12 +25,12 @@ const darkTheme = createMuiTheme({
       '"Segoe UI Symbol"',
     ].join(',')
   }
-});
+}));
 
-const rtlDarkTheme = createMuiTheme({
+const rtlDarkTheme = createTheme(adaptV4Theme({
   direction: 'rtl',
   palette: {
-    type: 'dark',
+    mode: 'dark',
     primary: {
       main: '#039be5'
     },
@@ -53,7 +53,7 @@ const rtlDarkTheme = createMuiTheme({
       '"Segoe UI Symbol"',
     ].join(',')
   }
-})
+}))
 
 export const ltrTheme = responsiveFontSizes(darkTheme);
 export const rtlTheme = responsiveFontSizes(rtlDarkTheme);
