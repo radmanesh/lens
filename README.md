@@ -7,6 +7,10 @@ Lens is the evolution of [Cut](https://cut.social/), a platform that facilitates
 * [Stroop Task](https://lens.cut.social/#/stroop/en)
 * [Ultiamtum Game](https://lens.cut.social/#/ultimatum/en)
 * [Dictator Game](https://lens.cut.social/#/dictator/en)
+* [Task Switch](https://lens.cut.social/#/taskswitch/en)
+* [Go/NoGo](https://lens.cut.social/#/gonogoalt/en)
+* [N-back](https://lens.cut.social/#/nback/en)
+
 
 \
 Lens uses React and Material UI to structure the development process while simplifying the study design for experimenters and providing a streamlined experience to respondents. It works by sending users a JSON file containing the tasks and questions and collecting their responses in the same format. See the details [here](https://sites.google.com/view/msrad/cut?authuser=0). 
