@@ -1,0 +1,20 @@
+name: React v1 app deployment
+
+on:
+  push:
+    branches: [ mirror,v1 ]
+  pull_request:
+    branches: [ mirror, v1 ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Deploy react app to github pages
+      uses: tanwanimohit/deploy-react-to-ghpages@v1.0.1
+            
+            
