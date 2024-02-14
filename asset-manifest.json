@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/lens/static/css/main.76246148.css",
+    "main.js": "/lens/static/js/main.a493aa20.js",
+    "index.html": "/lens/index.html",
+    "main.76246148.css.map": "/lens/static/css/main.76246148.css.map",
+    "main.a493aa20.js.map": "/lens/static/js/main.a493aa20.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76246148.css",
+    "static/js/main.a493aa20.js"
+  ]
+}
