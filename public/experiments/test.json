@@ -1,0 +1,344 @@
+{
+  "studyId": "test stuff",
+  "conditon": "a",
+  "redirectTo": "https://google.com?ID=123456",
+  "submissionNote": "submission.note",
+  "metadata":
+  {
+    "maintainer": "ansarinia@me.com"
+  },
+  "views": [
+    {
+      "id": "control",
+      "type": "matrix",
+      "text": "control.q",
+      "slider": true,
+      "showMidMark": true,
+      "requiredQuestions": [
+        0,
+        1,
+        2
+      ],
+      "direction": "vertical",
+      "choices": [
+        "control.c1",
+        "control.c2",
+        "control.c3",
+        "control.c4",
+        "control.c5",
+        "control.c6",
+        "control.c7"
+      ],
+      "questions": [
+        "control.q1",
+        "control.q6",
+        "control.q7",
+        "control.q8",
+        "control.q9",
+        "attention.check.1",
+        "control.q10",
+        "control.q2",
+        "control.q3",
+        "control.q4",
+        "control.q5",
+        "control.q11",
+        "control.q12"
+      ]
+    },
+    {
+      "id": "demographics",
+      "type": "text",
+      "instruction": true,
+      "text": "intro.demographics"
+    },
+    {
+      "id": "country",
+      "type": "text",
+      "instruction": false,
+      "text": "country.q",
+      "autoComplete": "countries",
+      "required": true
+    },
+    {
+      "id": "TaskSwitch Demo",
+      "type": "simplified_taskswitch",
+      "text": "taskswitch.instruction",
+      "help": "taskswitch.help",
+      "trials":
+      {
+        "total": 4,
+        "typeA": 2,
+        "left": 1,
+        "figureA": 1,
+        "colorA": 1
+      },
+      "stimuliDuration": 6000,
+      "fixationDuration": 1000,
+      "feedbackDuration": 1000,
+      "timeoutsBeforeReset": 100
+    },
+    {
+      "id": "nback.intro1",
+      "type": "text",
+      "instruction": true,
+      "text": "nback.intro1.text"
+    },
+    {
+      "id": "nback.check",
+      "type": "matrix",
+      "text": "nback.check.text",
+      "requiredQuestions": [0, 1, 2],
+      "direction": "vertical",
+      "choices": [
+        "nback.check.choice.1",
+        "nback.check.choice.2"
+      ],
+      "questions": [
+        "nback.check.q.1",
+        "nback.check.q.2",
+        "nback.check.q.3"
+      ]
+    },
+    {
+      "id": "NBack Practice",
+      "type": "nback",
+      "text": "nback.instruction",
+      "help": "nback.help",
+      "trials": 5,
+      "nback": 2,
+      "stimuli": [
+      {
+        "type": "letter",
+        "name": "A",
+        "amount": 2
+      },
+      {
+        "type": "letter",
+        "name": "N",
+        "amount": 1
+      },
+      {
+        "type": "letter",
+        "name": "F",
+        "amount": 2
+      }],
+      "stimuliDuration": 2000,
+      "fixationDuration": 500,
+      "feedbackDuration": 500
+    },
+    {
+      "id": "stroop_demo",
+      "type": "stroop",
+      "rule": "stroop_demo.rule",
+      "help": "stroop_demo.help",
+      "colors":
+      {
+        "G": "#6cba47",
+        "R": "#d73636"
+      },
+      "words":
+      {
+        "G": "colors.green",
+        "R": "colors.red"
+      },
+      "trials": [
+      {
+        "stimulus": "GG",
+        "choices": ["GG", "RR"]
+      },
+      {
+        "stimulus": "RR",
+        "choices": ["GG", "RR"]
+      },
+      {
+        "stimulus": "RG",
+        "choices": ["GG", "RR"]
+      },
+      {
+        "stimulus": "GG",
+        "choices": ["GG", "RR"]
+      },
+      {
+        "stimulus": "RR",
+        "choices": ["GG", "RR"]
+      },
+      {
+        "stimulus": "RG",
+        "choices": ["GG", "RR"]
+      }],
+      "stimulusDuration": 1000,
+      "fixationDuration": 1000,
+      "feedbackDuration": 750,
+      "timeoutsBeforeReset": 10,
+      "randomizeTrials": true,
+      "randomizeChoices": true
+    },
+    {
+      "id": "taskswitch.intro1",
+      "type": "text",
+      "instruction": true,
+      "text": "taskswitch.intro1.text"
+    },
+    {
+      "id": "taskswitch.intro2",
+      "type": "text",
+      "instruction": true,
+      "text": "taskswitch.intro2.text"
+    },
+    {
+      "id": "taskswitch.intro5",
+      "type": "text",
+      "instruction": true,
+      "text": "taskswitch.intro5.text"
+    },
+    {
+      "id": "TaskSwitch Demo",
+      "type": "taskswitch",
+      "text": "taskswitch.instruction",
+      "help": "taskswitch.help",
+      "trials":
+      {
+        "total": 8,
+        "top":
+        {
+          "total": 4,
+          "go": 2,
+          "left": 2,
+          "leftGo": 1,
+          "choices":
+          {
+            "go": "blue-star",
+            "nogo": "star"
+          }
+        },
+        "bottom":
+        {
+          "total": 4,
+          "go": 2,
+          "left": 2,
+          "leftGo": 1,
+          "choices":
+          {
+            "go": "star",
+            "nogo": "blue-star"
+          }
+        }
+
+      },
+      "stimuliDuration": 2000,
+      "fixationDuration": 1000,
+      "feedbackDuration": 1000,
+      "timeoutsBeforeReset": 5
+    },
+    {
+      "id": "bart",
+      "type": "bart",
+      "reward": 100,
+      "maxPumps": 100,
+      "safePumps": 3,
+      "trials": 5
+    },
+    {
+      "id": "gonogo.introduction",
+      "type": "text",
+      "instruction": true,
+      "text": "gonogo.introduction"
+    },
+    {
+      "id": "gonogo.w.feedback",
+      "type": "gonogo",
+      "text": "gonogo.instruction",
+      "help": "",
+      "trials":
+      {
+        "total": 6,
+        "go": 4,
+        "left": 3,
+        "leftGo": 2
+      },
+      "stimuliDuration": 1000,
+      "fixationDuration": 1000,
+      "feedbackDuration": 500,
+      "timeoutsBeforeReset": 4,
+      "choices":
+      {
+        "go": "blue-star",
+        "nogo": "star"
+      }
+    },
+    {
+      "id": "gonogo.n.feedback.introduction",
+      "type": "text",
+      "instruction": true,
+      "text": "gonogo.main.introduction"
+    },
+    {
+      "id": "gonogo.n.feedback",
+      "type": "gonogo",
+      "text": "gonogo.instruction",
+      "help": "Press one of the images in less than three seconds.",
+      "trials":
+      {
+        "total": 6,
+        "go": 4,
+        "left": 3,
+        "leftGo": 2
+      },
+      "stimuliDuration": 1000,
+      "fixationDuration": 1000,
+      "feedbackDuration": 0,
+      "timeoutsBeforeReset": 4,
+      "choices":
+      {
+        "go": "blue-star",
+        "nogo": "star"
+      }
+    },
+    {
+      "id": "GoNoGo Alternative with letters Demo",
+      "type":"gonogoalt",
+      "text":"gonogoalt.instruction",
+      "help":"gonogoalt.help",
+      "trials": {
+        "total": 6,
+        "go": 4
+      },
+      "stimuliDuration": 2000,
+      "fixationDuration": 500, 
+      "feedbackDuration": 1000,
+      "choices": {
+        "go": {
+          "type": "letter",
+          "names": ["b","c","d","f","g","h"]
+        },
+        "nogo": {
+          "type": "letter",
+          "names":["a","e","i","o","u"] 
+        }
+      }
+    },
+    {
+      "id": "gonogo with letters",
+      "type":"gonogoalt",
+      "text":"gonogoalt.instruction",
+      "help":"gonogoalt.help",
+      "trials": {
+        "total": 6,
+        "go": 5
+      },
+      "stimuliDuration": 1500,
+      "fixationDuration": 500, 
+      "feedbackDuration": 500,
+      "choices": {
+        "go": {
+          "type": "letter",
+          "names": ["B","C","D","F","G","H","J","K","L","M","N","P","Q","R","S","T","V","W","X","Y","Z"]
+        },
+        "nogo": {
+          "type": "letter",
+          "names":["A","E","I","O","U"] 
+        }
+      }
+    }
+  ]
+}
